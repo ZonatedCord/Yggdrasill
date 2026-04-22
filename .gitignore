@@ -1,0 +1,75 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+Icon?
+Desktop.ini
+
+# KiCad
+*.bak
+*.kicad_prl
+*-bak/
+**/fp-info-cache
+__pycache__/
+*.pyc
+*-backups/
+
+# KiCad exports (keep Esportazione/ folders but ignore auto-generated intermediates)
+*.gbr.bak
+*.drl.bak
+
+# Xcode
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+build/
+*.xcarchive
+.build/
+
+# Swift Package Manager
+.swiftpm/
+Packages/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# 3D / CAD
+*.blend1
+*.blend2
+*.stl.bak
+*.f3d
+*.f3z
+*.step.bak
+
+# Archives (keep only official Gerber exports in Esportazione/ folders)
+*.zip
+!PCB/*/Esportazione/**/*.zip
+!PCB/*/Esportazione.zip
+
+# WLED-iOS has its own .git repo — will become submodule once user pushes fork to GitHub
+WLED-iOS/
+
+# IDE
+.vscode/
+.idea/
+
+# Claude context (private, not for publication)
+CONTEXT.md
+NEXT_SESSIONS.md
+
+# Misc
+*.log
+*.tmp
+.env

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "DCJ200-10-A-XX-K_REVA")(type "KiCad")(uri "${KIPRJMOD}/Esterne/Jack Doller/DCJ200-10-A-XX-K_REVA.kicad_sym")(options "")(descr ""))
+)

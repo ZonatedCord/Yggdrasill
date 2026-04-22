@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ESP32-WROOM-32U")(type "KiCad")(uri "${KIPRJMOD}/FileImpronte/ESP32-WROOM-32U/ESP32-WROOM-32U.kicad_sym")(options "")(descr ""))
+)

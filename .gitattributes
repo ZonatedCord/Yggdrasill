@@ -1,0 +1,20 @@
+* text=auto eol=lf
+
+# Binary files — no diff
+*.stl binary
+*.kicad_pcb binary
+*.kicad_sch binary
+*.kicad_pro binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.ipa binary
+*.dSYM binary
+*.step binary
+*.htm binary
+
+# Optional LFS for large STL files — uncomment and run `git lfs install` to enable
+# *.stl filter=lfs diff=lfs merge=lfs -text
