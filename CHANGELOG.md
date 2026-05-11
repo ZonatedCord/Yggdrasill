@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to PiantaSmart are documented here.
+All notable changes to Yggdrasill are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---

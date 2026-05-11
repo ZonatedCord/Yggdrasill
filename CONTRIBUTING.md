@@ -1,4 +1,4 @@
-# Contributing to PiantaSmart
+# Contributing to Yggdrasill
 
 Thank you for your interest. Contributions are welcome across all three pillars: hardware, 3D models, and the iOS app.
 
@@ -47,7 +47,7 @@ docs: update 3d-printing material recommendations
 ### iOS app
 
 ```bash
-git clone --recurse-submodules https://github.com/YOUR_FORK/PiantaSmart
+git clone --recurse-submodules https://github.com/YOUR_FORK/Yggdrasill
 open WLED-iOS/wled.xcodeproj  # Xcode 15+
 ```
 

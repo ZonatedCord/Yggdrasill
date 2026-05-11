@@ -1,4 +1,4 @@
-# PiantaSmart
+# Yggdrasill
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/Hardware%2F3D-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![iOS App: GPL v3](https://img.shields.io/badge/iOS%20App-GPL%20v3-blue.svg)](WLED-iOS/LICENSE)
@@ -40,7 +40,7 @@
 ## Repository structure
 
 ```
-PiantaSmart/
+Yggdrasill/
 ├── PCB/               KiCad projects — 4 board variants + footprint library
 ├── 3D/                STL files for FDM printing
 ├── WLED-iOS/          iOS app (Liquid Glass, GPL v3) — future git submodule
@@ -61,7 +61,7 @@ PiantaSmart/
 Requires **Xcode 16+** and an **iOS 26+** device or simulator.
 
 ```bash
-git clone --recurse-submodules https://github.com/YOUR/PiantaSmart
+git clone --recurse-submodules https://github.com/YOUR/Yggdrasill
 open WLED-iOS/wled.xcodeproj
 ```
 

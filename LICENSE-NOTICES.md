@@ -1,6 +1,6 @@
 # License Notices
 
-PiantaSmart uses a dual-license structure. This file clarifies which license applies to each component.
+Yggdrasill uses a dual-license structure. This file clarifies which license applies to each component.
 
 ---
 

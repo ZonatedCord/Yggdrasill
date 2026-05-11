@@ -1,6 +1,6 @@
 # 3D Models
 
-FDM-printable vase for the PiantaSmart LED plant pot.
+FDM-printable vase for the Yggdrasill LED plant pot.
 
 | File | Description | Status |
 |---|---|---|
