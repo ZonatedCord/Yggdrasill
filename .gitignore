@@ -65,6 +65,9 @@ WLED-iOS/
 .vscode/
 .idea/
 
+# Claude Code local config
+.claude/
+
 # Claude context (private, not for publication)
 CONTEXT.md
 NEXT_SESSIONS.md
