@@ -6,8 +6,10 @@
 
 | File | Description | Status |
 |---|---|---|
-| `3D/VASO_Corpo.stl` | Main vase body | Ready |
-| `3D/VASO-tappo_DaRivedere.stl` | Vase cap | WIP — needs revision |
+| `3D/VasoGiusto.stl` | Main vase body | Ready |
+| `3D/BaseVaso.stl` | Vase base | Ready |
+| `3D/Foglia.stl` | Decorative leaf, pairs with `PCB/Foglia/` | Ready |
+| `3D/TasselloFissaggioPCB.stl` | PCB mounting dowel | Ready |
 
 ---
 
@@ -28,13 +30,15 @@
 
 ## Assembly notes
 
-The `Foglia` PCB is designed to fit inside / alongside the vase body. The LED strip routes through the internal channels of `VASO_Corpo`. Secure PCB with M2 screws or adhesive foam tape.
+The `Foglia` PCB is designed to fit inside / alongside the vase body. The LED strip routes through the internal channels of `VasoGiusto`. Secure PCB with `TasselloFissaggioPCB` or adhesive foam tape.
 
-The cap (`VASO-tappo`) is under revision — current STL may need scaling or support adjustment before printing.
+The `Foglia.stl` decorative leaf mirrors the `PCB/Foglia/` board shape.
 
 ---
 
 ## Estimated print time
 
-- **VASO_Corpo:** ~6–9 h (depends on printer speed)
-- **VASO-tappo:** ~1–2 h
+- **VasoGiusto:** ~6–9 h (depends on printer speed)
+- **BaseVaso:** ~1–2 h
+- **Foglia:** ~1–2 h
+- **TasselloFissaggioPCB:** <1 h

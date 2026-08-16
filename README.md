@@ -19,7 +19,7 @@
 |---|---|---|
 | **Hardware** | ESP32 PCB (`PCB/`) | 4 board variants in KiCad. LED strip driver + power. |
 | **iOS App** | WLED Native (`WLED-iOS/`) | Liquid Glass redesign (iOS 26). mDNS discovery + WebSocket control. |
-| **3D** | Printable vase (`3D/`) | Body ready. Cap WIP. FDM-printable in PETG or PLA. |
+| **3D** | Printable vase (`3D/`) | Body, base, leaf & mount ready. FDM-printable in PETG or PLA. |
 
 ---
 
@@ -31,8 +31,10 @@
 | BaseChipOnly PCB (rev 1.03+) | Active — **recommended** |
 | BaseUSB-C rev0.1 PCB | Early revision |
 | Foglia PCB | Active |
-| Vase body (VASO_Corpo.stl) | Ready |
-| Vase cap (VASO-tappo) | WIP |
+| Vase body (VasoGiusto.stl) | Ready |
+| Vase base (BaseVaso.stl) | Ready |
+| Leaf (Foglia.stl) | Ready |
+| PCB mount (TasselloFissaggioPCB.stl) | Ready |
 | iOS app (Liquid Glass) | In development |
 
 ---
