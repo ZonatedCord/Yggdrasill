@@ -6,7 +6,7 @@
 
 | File | Description | Status |
 |---|---|---|
-| `3D/VasoGiusto.stl` | Main vase body | Ready |
+| `3D/VasoGiusto.stl` | Main vase body | WIP — top/bottom attach points fail, MB engraving needs rework |
 | `3D/BaseVaso.stl` | Vase base | Ready |
 | `3D/Foglia.stl` | Decorative leaf, pairs with `PCB/Foglia/` | Ready |
 | `3D/TasselloFissaggioPCB.stl` | PCB mounting dowel | Ready |
