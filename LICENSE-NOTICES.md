@@ -32,4 +32,4 @@ Full terms: see `WLED-iOS/LICENSE`.
 
 Commercial use of the hardware or 3D designs requires explicit written permission from the copyright holder.
 
-Contact: **barleramarco2@gmail.com**
+Contact: **barleramarco05@gmail.com**

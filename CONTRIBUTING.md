@@ -68,4 +68,4 @@ Gerbers for fabrication are in `PCB/<variant>/Esportazione/`.
 3. Commit with conventional style
 4. Open a pull request against `main`
 
-For commercial licensing inquiries: barleramarco2@gmail.com
+For commercial licensing inquiries: barleramarco05@gmail.com
