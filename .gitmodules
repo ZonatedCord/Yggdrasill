@@ -1,0 +1,4 @@
+[submodule "WLED-iOS"]
+	path = WLED-iOS
+	url = https://github.com/ZonatedCord/WLED-iOS.git
+	branch = liquid-glass-redesign
