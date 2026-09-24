@@ -58,9 +58,6 @@ Podfile.lock
 !PCB/*/Esportazione/**/*.zip
 !PCB/*/Esportazione.zip
 
-# WLED-iOS has its own .git repo — will become submodule once user pushes fork to GitHub
-WLED-iOS/
-
 # IDE
 .vscode/
 .idea/
