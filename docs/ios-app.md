@@ -6,7 +6,7 @@ A native iPhone/iPad app to discover and control WLED devices on the local netwo
 
 ## Overview
 
-Yggdrasill's iOS app is a fork of [Moustachauve/WLED-iOS](https://github.com/Moustachauve/WLED-iOS) (GPL v3), restyled with **Apple's Liquid Glass** design language (iOS 26).
+Yggdrasill's iOS app is a fork of [Moustachauve/WLED-iOS](https://github.com/Moustachauve/WLED-iOS) (GPL v3), restyled with **Apple's Liquid Glass** design language (iOS 26). Published fork: [ZonatedCord/WLED-iOS](https://github.com/ZonatedCord/WLED-iOS) (`origin`; `upstream` = Moustachauve/WLED-iOS).
 
 The app communicates with WLED firmware running on the ESP32 via:
 - **WebSocket** — real-time state sync

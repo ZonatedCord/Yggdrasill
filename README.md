@@ -96,11 +96,12 @@ See [docs/3d-printing.md](docs/3d-printing.md) for orientation and joint-clearan
 Requires **Xcode 16+** and an **iOS 26+** device or simulator.
 
 ```bash
-git clone --recurse-submodules https://github.com/YOUR/Yggdrasill
+git clone https://github.com/ZonatedCord/Yggdrasill
+git clone https://github.com/ZonatedCord/WLED-iOS
 open WLED-iOS/wled.xcodeproj
 ```
 
-> Note: `WLED-iOS/` submodule link is set up once the fork is published on GitHub.
+> Fork: [ZonatedCord/WLED-iOS](https://github.com/ZonatedCord/WLED-iOS) — Liquid Glass (iOS 26) redesign of [Moustachauve/WLED-iOS](https://github.com/Moustachauve/WLED-iOS). Not yet wired up as a git submodule; `WLED-iOS/` is currently a standalone clone alongside this repo.
 
 ---
 
@@ -110,7 +111,7 @@ open WLED-iOS/wled.xcodeproj
 Yggdrasill/
 ├── PCB/               KiCad projects — 4 board variants + footprint library
 ├── 3D/                Modular vase — Vaso/ (Fusion source + STEP + animations), STL_stampa/ (print-ready STLs)
-├── WLED-iOS/          iOS app (Liquid Glass, GPL v3) — future git submodule
+├── WLED-iOS/          iOS app (Liquid Glass, GPL v3) — fork: ZonatedCord/WLED-iOS, standalone clone (not a submodule yet)
 ├── docs/              Hardware, iOS, 3D, and assembly documentation
 │   └── hardware-reviews/  PCB analysis notes
 ├── LICENSE            CC BY-NC-SA 4.0 (hardware + 3D)

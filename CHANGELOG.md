@@ -10,6 +10,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added
 - Repository structure, docs/, CHANGELOG, CONTRIBUTING, LICENSE-NOTICES
 - iOS app Liquid Glass redesign (iOS 26 material system)
+- iOS app fork published publicly: [ZonatedCord/WLED-iOS](https://github.com/ZonatedCord/WLED-iOS) (`origin`; `upstream` = Moustachauve/WLED-iOS)
 - 3D: vase redesigned as a modular assembly (base + lid + trunk + 3 branches + leaves) with bayonet/snap-fit joints, replacing the single-piece `VasoGiusto` body; Fusion 360 source in `3D/Vaso/`, print-ready STLs in `3D/STL_stampa/`
 - 3D: assembly animation renders (leaf insertion, branch assembly, full assembly) in `3D/Vaso/animazioni/`
 
