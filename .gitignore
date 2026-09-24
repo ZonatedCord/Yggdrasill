@@ -76,3 +76,7 @@ NEXT_SESSIONS.md
 *.log
 *.tmp
 .env
+
+# Fusion 360 animation frame dumps (regenerable via ffmpeg export, not for git)
+3D/Vaso/animazione_frames/
+3D/Vaso/animazioni/frames_*/

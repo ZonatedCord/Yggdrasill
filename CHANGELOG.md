@@ -10,6 +10,15 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added
 - Repository structure, docs/, CHANGELOG, CONTRIBUTING, LICENSE-NOTICES
 - iOS app Liquid Glass redesign (iOS 26 material system)
+- 3D: vase redesigned as a modular assembly (base + lid + trunk + 3 branches + leaves) with bayonet/snap-fit joints, replacing the single-piece `VasoGiusto` body; Fusion 360 source in `3D/Vaso/`, print-ready STLs in `3D/STL_stampa/`
+- 3D: assembly animation renders (leaf insertion, branch assembly, full assembly) in `3D/Vaso/animazioni/`
+
+### Changed
+- Docs (`README.md`, `3D/README.md`, `docs/3d-printing.md`, `docs/assembly.md`) updated to reflect the modular vase design
+
+### Removed
+- `3D/VasoGiusto.stl`, `3D/BaseVaso.stl`, old `3D/Foglia.stl`/`Foglia.3mf` — superseded by the modular design's `3D/STL_stampa/` parts
+- Intermediate animation frame dumps (~400 MB of PNGs) and the earlier "montaggio" animation take, superseded by the current renders in `3D/Vaso/animazioni/`
 
 ---
 

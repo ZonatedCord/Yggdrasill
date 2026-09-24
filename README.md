@@ -19,7 +19,7 @@
 |---|---|---|
 | **Hardware** | ESP32 PCB (`PCB/`) | 4 board variants in KiCad. LED strip driver + power. |
 | **iOS App** | WLED Native (`WLED-iOS/`) | Liquid Glass redesign (iOS 26). mDNS discovery + WebSocket control. |
-| **3D** | Printable vase (`3D/`) | Base, leaf & mount ready. Vase body WIP (attach points). FDM-printable in PETG or PLA. |
+| **3D** | Modular printable vase (`3D/`) | Base + lid + trunk + 3 branches + leaves, bayonet/snap-fit joints. FDM-printable in PETG or PLA. |
 
 ---
 
@@ -31,10 +31,7 @@
 | BaseChipOnly PCB (rev 1.03+) | Active — **recommended** |
 | BaseUSB-C rev0.1 PCB | Early revision |
 | Foglia PCB | Active |
-| Vase body (VasoGiusto.stl) | WIP — attach points + MB engraving to rework |
-| Vase base (BaseVaso.stl) | Ready |
-| Leaf (Foglia.stl) | Ready |
-| PCB mount (TasselloFissaggioPCB.stl) | Ready |
+| Modular vase (Vaso/Base/Coperchio/Rami/Foglia, `3D/STL_stampa/`) | Redesigned in Fusion 360 as modular parts — fit clearances not yet verified empirically, bayonet test rings not yet printed |
 | iOS app (Liquid Glass) | In development |
 
 ---
@@ -44,7 +41,7 @@
 ```
 Yggdrasill/
 ├── PCB/               KiCad projects — 4 board variants + footprint library
-├── 3D/                STL files for FDM printing
+├── 3D/                Modular vase — Vaso/ (Fusion source + STEP + animations), STL_stampa/ (print-ready STLs)
 ├── WLED-iOS/          iOS app (Liquid Glass, GPL v3) — future git submodule
 ├── docs/              Hardware, iOS, 3D, and assembly documentation
 │   └── hardware-reviews/  PCB analysis notes
@@ -80,6 +77,16 @@ See [docs/hardware.md](docs/hardware.md) for full variant table and BOM.
 ### 3D printing
 
 See [docs/3d-printing.md](docs/3d-printing.md) for settings. PETG recommended, 0.2 mm layers.
+
+---
+
+## Assembly preview
+
+| Leaf insertion | Branch assembly |
+|---|---|
+| ![Leaf insertion](3D/Vaso/animazioni/yggdrasill_foglia_readme.gif) | ![Branch assembly](3D/Vaso/animazioni/yggdrasill_rami_readme.gif) |
+
+![Full assembly](3D/Vaso/animazioni/yggdrasill_totale_readme.gif)
 
 ---
 
