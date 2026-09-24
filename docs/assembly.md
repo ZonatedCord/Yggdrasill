@@ -2,7 +2,7 @@
 
 > Work in progress.
 
-> **PCB compatibility:** the STL files here (lid mounting points + `TasselloFissaggioPCB.stl`) are designed for the **`BaseChipOnly`** PCB variant. Other variants (`BaseDevKit`, `BaseUSB-C`) need the lid's PCB mounting points redesigned first — see [3d-printing.md](3d-printing.md#pcb-compatibility).
+> **PCB compatibility:** the STL files here (base mounting points + `TasselloFissaggioPCB.stl`) are designed for the **`BaseChipOnly`** PCB variant. Other variants (`BaseDevKit`, `BaseUSB-C`) need the base's PCB mounting points redesigned first — see [3d-printing.md](3d-printing.md#pcb-compatibility).
 
 ---
 
@@ -15,7 +15,7 @@
 5. Solder LED strip to PCB (DATA, +5V, GND)
 6. Route LED strip through the trunk (`Vaso.stl`) internal channels
 7. Assemble base → trunk → branches (bayonet joints) → leaves (9×) → lid, per the assembly animations in `3D/Vaso/animazioni/`
-8. Mount PCB inside the lid (`Coperchio.stl`) with `TasselloFissaggioPCB.stl` — fit against the current `Coperchio.stl` design still unconfirmed by a physical print, see [3d-printing.md](3d-printing.md)
+8. Mount PCB inside the base (`Base.stl`) with `TasselloFissaggioPCB.stl` — fit against the current `Base.stl` design still unconfirmed by a physical print, see [3d-printing.md](3d-printing.md)
 9. Connect power (5V, 2A minimum)
 10. Install iOS app — see [ios-app.md](ios-app.md)
 11. App auto-discovers device via mDNS

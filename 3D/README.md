@@ -12,8 +12,8 @@ FDM-printable parts for the Yggdrasill LED plant pot. The vase is now a **modula
 | File | Description | Bed footprint (X×Y×Z mm) | Print notes |
 |---|---|---|---|
 | `Vaso.stl` | Trunk / vase body | 150×150×167 | Print **capovolto** (upside down) — cable slot must be on the print bed |
-| `Base.stl` | Vase base | 135×135×25 | Bayonet joint to lid — see clearances below |
-| `Coperchio.stl` | Lid — carries the PCB mounting points | 143×143×18 | Bayonet joint to base — see clearances below. **Designed for `BaseChipOnly` only**, see PCB compatibility below |
+| `Base.stl` | Vase base — carries the PCB mounting points | 135×135×25 | Bayonet joint to lid — see clearances below. **Designed for `BaseChipOnly` only**, see PCB compatibility below |
+| `Coperchio.stl` | Lid | 143×143×18 | Bayonet joint to base — see clearances below |
 | `Ramo_1.stl` | Branch 1 | 101×129×324 | Too tall for upright printing on a 256 mm-Z printer (P2S) — must lie down or print at an angle |
 | `Ramo_2.stl` | Branch 2 | 157×128×335 | Too tall for upright printing on a 256 mm-Z printer (P2S) — must lie down or print at an angle |
 | `Ramo_3.stl` | Branch 3 | 99×153×324 | Too tall for upright printing on a 256 mm-Z printer (P2S) — must lie down or print at an angle |
@@ -27,7 +27,7 @@ FDM-printable parts for the Yggdrasill LED plant pot. The vase is now a **modula
 
 ## PCB compatibility
 
-These files (`Coperchio.stl`'s PCB mounting points, and `TasselloFissaggioPCB.stl`) are designed for the **`BaseChipOnly`** PCB variant only (see [PCB/BaseChipOnly](../PCB/BaseChipOnly)). Using `BaseDevKit` or `BaseUSB-C` instead requires redesigning the lid's mounting points in Fusion to match that board's outline/holes before printing.
+These files (`Base.stl`'s PCB mounting points, and `TasselloFissaggioPCB.stl`) are designed for the **`BaseChipOnly`** PCB variant only (see [PCB/BaseChipOnly](../PCB/BaseChipOnly)). Using `BaseDevKit` or `BaseUSB-C` instead requires redesigning the base's mounting points in Fusion to match that board's outline/holes before printing.
 
 ## Assembly animations
 
