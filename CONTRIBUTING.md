@@ -48,10 +48,10 @@ docs: update 3d-printing material recommendations
 
 ```bash
 git clone --recurse-submodules https://github.com/YOUR_FORK/Yggdrasill
-open WLED-iOS/wled.xcodeproj  # Xcode 15+
+open WLED-iOS/wled.xcodeproj  # Xcode 16+
 ```
 
-> Note: `WLED-iOS/` is managed as a git submodule once the fork is linked.
+> `WLED-iOS/` is a git submodule pointing to [ZonatedCord/WLED-iOS](https://github.com/ZonatedCord/WLED-iOS)'s `liquid-glass-redesign` branch. Already cloned without `--recurse-submodules`? Run `git submodule update --init`.
 
 ### Hardware (KiCad)
 
