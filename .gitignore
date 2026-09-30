@@ -77,3 +77,7 @@ NEXT_SESSIONS.md
 # Fusion 360 animation frame dumps (regenerable via ffmpeg export, not for git)
 3D/Vaso/animazione_frames/
 3D/Vaso/animazioni/frames_*/
+
+# BaseChipOnly copia MCP: stale copy of the rev 1.03 Gerbers and old DRC report (kept locally only)
+PCB/BaseChipOnly copia MCP/Esportazione/
+PCB/BaseChipOnly copia MCP/BaseChipOnly_drc_violations.json

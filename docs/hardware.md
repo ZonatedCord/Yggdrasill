@@ -9,12 +9,12 @@ All boards are designed in **KiCad 8**. ESP32 + addressable LEDs (WS2812B / SK68
 | Folder | Description | Power | Status | Gerbers |
 |---|---|---|---|---|
 | `BaseDevKit` | ESP32 dev kit carrier board | 5V barrel/USB | Active | `BaseDevKit/Esportazione/` |
-| `BaseChipOnly` | Compact bare ESP32-WROOM-32 | 5V | Active (HW rev 1.03+) | `BaseChipOnly/Esportazione/` |
+| `BaseChipOnly` | Compact bare ESP32-WROOM-32 | 5V | Rev 1.03 fabricated; next rev in `BaseChipOnly copia MCP/` (not yet fabricated) | rev 1.03: `BaseChipOnly/Esportazione/` · next rev: `BaseChipOnly copia MCP/Esportazione-2026-09-30/` |
 | `BaseUSB-C_rev0.1` | USB-C powered, rev 0.1 | 5V USB-C | Early rev | — |
 | `Foglia` | Leaf-shaped decorative board | 5V | Active | `Foglia/Esportazione/` |
 | `Impronte` | Custom KiCad footprint library | — | Library | — |
 
-**Recommended for new builds:** `BaseChipOnly` HW rev 1.03+ (most compact, good Gerber coverage).
+**Recommended for new builds:** `BaseChipOnly`, next revision in `PCB/BaseChipOnly copia MCP/` (all bring-up fixes, BOOT/RESET buttons, working auto-reset). How it works, power budget and WLED settings: [base-chiponly-pcb.md](base-chiponly-pcb.md).
 
 ---
 
@@ -24,7 +24,7 @@ All boards are designed in **KiCad 8**. ESP32 + addressable LEDs (WS2812B / SK68
 |---|---|---|
 | ESP32-WROOM-32 | Main microcontroller | WLED firmware |
 | WS2812B / SK6812 | Addressable RGB LEDs | SK6812 supports RGBW |
-| AMS1117-3.3 or LDO | 3.3V regulator | Per schematic |
+| AMS1117-3.3 or LDO | 3.3V regulator | Per schematic (BaseChipOnly uses an LM2596-ADJ buck) |
 | 100nF + 47µF decoupling caps | Power filtering | See schematic |
 | USB-C connector | Power input (BaseUSB-C only) | GCT USB4135 or similar |
 

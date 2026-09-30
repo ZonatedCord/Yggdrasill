@@ -77,7 +77,9 @@ Expected current when working: (5 − 2) / 470 ≈ 6.4 mA.
 
 ---
 
-## Workarounds for the currently assembled board
+## Workarounds for the currently assembled board (rev 1.03)
+
+> The next revision (`PCB/BaseChipOnly copia MCP/`) fixes all of these; the notes below apply only to boards made from the rev 1.03 Gerbers.
 
 These apply to the physical board as built, until the sources are fixed:
 
