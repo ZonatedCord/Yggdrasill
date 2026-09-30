@@ -46,4 +46,4 @@ Upload the `Esportazione/` folder contents (or zip) to JLCPCB / PCBWay directly.
 
 ## Known issues
 
-- `BaseChipOnly` early revisions: via-on-pad short circuits on decoupling caps. Fixed in HW rev 1.03+. See `docs/hardware-reviews/base-chiponly-review.md` for full analysis.
+- `BaseChipOnly` as fabricated: D1 and D2 reversed, auto-reset non-functional, no BOOT/RESET buttons, undersized L1. All fixed in the sources in `PCB/BaseChipOnly copia MCP/` (2026-09-30), not yet re-fabricated — see `docs/hardware-reviews/base-chiponly-fixes.md`. The older "via-on-pad short circuit" finding was false; see `docs/hardware-reviews/base-chiponly-review.md`.

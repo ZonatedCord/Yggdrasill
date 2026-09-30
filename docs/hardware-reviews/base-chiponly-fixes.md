@@ -2,7 +2,9 @@
 
 Bring-up session, 2026-07-28 → 2026-08-01. Board reached a working state: 5 V and 3.3 V rails correct, ESP32 boots, WiFi connects, WLED 16.0.1 drives the LED strip.
 
-This file records every defect found, how it was verified, and the proposed fix. Nothing here has been applied to the KiCad sources yet.
+This file records every defect found, how it was verified, and the proposed fix.
+
+> **Status 2026-09-30:** all defects #1–#10 below are fixed in the KiCad sources in `PCB/BaseChipOnly copia MCP/` (schematic and PCB, verified by netlist diff, ERC, DRC with schematic parity, and Gerber X2 attributes). New fabrication outputs are in `PCB/BaseChipOnly copia MCP/Esportazione-2026-09-30/`. Not yet fabricated or bench-tested — the auto-reset rework in particular still needs a bench check. Details: `PCB/BaseChipOnly copia MCP/FIX_LOG.md`.
 
 > Written in English per the project convention in `CONTEXT.md`.
 

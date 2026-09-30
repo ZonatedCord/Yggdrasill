@@ -1,0 +1,952 @@
+{
+  "board": "/Users/marcobarlera/Documents/02_PROGETTI/Yggdrasill/PCB/BaseChipOnly copia MCP/BaseChipOnly.kicad_pcb",
+  "timestamp": "2026-09-28T14:15:45+0200",
+  "total_violations": 93,
+  "violation_counts": {
+    "clearance": 24,
+    "hole_to_hole": 12,
+    "holes_co_located": 1,
+    "drill_out_of_range": 12,
+    "lib_footprint_issues": 3,
+    "text_height": 13,
+    "silk_over_copper": 4,
+    "solder_mask_bridge": 24
+  },
+  "severity_counts": {
+    "error": 60,
+    "warning": 33,
+    "info": 0
+  },
+  "violations": [
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 154.4,
+        "y": 48.532323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 154.4,
+        "y": 48.532323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 155.8,
+        "y": 48.532323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 155.8,
+        "y": 48.532323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 155.8,
+        "y": 48.532323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 157.2,
+        "y": 48.532323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 157.2,
+        "y": 48.532323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 154.4,
+        "y": 49.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 154.4,
+        "y": 49.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 154.4,
+        "y": 49.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 155.8,
+        "y": 49.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 155.8,
+        "y": 49.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 155.8,
+        "y": 49.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 155.8,
+        "y": 49.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 157.2,
+        "y": 49.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 157.2,
+        "y": 49.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 157.2,
+        "y": 49.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 154.4,
+        "y": 51.332323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 154.4,
+        "y": 51.332323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 155.8,
+        "y": 51.332323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 155.8,
+        "y": 51.332323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 155.8,
+        "y": 51.332323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 157.2,
+        "y": 51.332323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "clearance",
+      "severity": "error",
+      "message": "Violazione clearance (netclass \"Default\" clearance 0.2000 mm; reale 0.0250 mm)",
+      "location": {
+        "x": 157.2,
+        "y": 51.332323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "hole_to_hole",
+      "severity": "warning",
+      "message": "Fori troppo vicini tra loro (vincoli impostazioni scheda min 0.2495 mm; reale 0.2000 mm)",
+      "location": {
+        "x": 134.25,
+        "y": 60.882323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "hole_to_hole",
+      "severity": "warning",
+      "message": "Fori troppo vicini tra loro (vincoli impostazioni scheda min 0.2495 mm; reale 0.2000 mm)",
+      "location": {
+        "x": 134.25,
+        "y": 60.882323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "hole_to_hole",
+      "severity": "warning",
+      "message": "Fori troppo vicini tra loro (vincoli impostazioni scheda min 0.2495 mm; reale 0.2000 mm)",
+      "location": {
+        "x": 134.75,
+        "y": 59.882323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "hole_to_hole",
+      "severity": "warning",
+      "message": "Fori troppo vicini tra loro (vincoli impostazioni scheda min 0.2495 mm; reale 0.2000 mm)",
+      "location": {
+        "x": 134.75,
+        "y": 59.882323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "hole_to_hole",
+      "severity": "warning",
+      "message": "Fori troppo vicini tra loro (vincoli impostazioni scheda min 0.2495 mm; reale 0.2000 mm)",
+      "location": {
+        "x": 134.75,
+        "y": 59.882323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "hole_to_hole",
+      "severity": "warning",
+      "message": "Fori troppo vicini tra loro (vincoli impostazioni scheda min 0.2495 mm; reale 0.2000 mm)",
+      "location": {
+        "x": 135.25,
+        "y": 60.882323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "hole_to_hole",
+      "severity": "warning",
+      "message": "Fori troppo vicini tra loro (vincoli impostazioni scheda min 0.2495 mm; reale 0.2000 mm)",
+      "location": {
+        "x": 135.25,
+        "y": 60.882323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "hole_to_hole",
+      "severity": "warning",
+      "message": "Fori troppo vicini tra loro (vincoli impostazioni scheda min 0.2495 mm; reale 0.2000 mm)",
+      "location": {
+        "x": 134.75,
+        "y": 60.882323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "hole_to_hole",
+      "severity": "warning",
+      "message": "Fori troppo vicini tra loro (vincoli impostazioni scheda min 0.2495 mm; reale 0.2000 mm)",
+      "location": {
+        "x": 134.75,
+        "y": 60.382323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "hole_to_hole",
+      "severity": "warning",
+      "message": "Fori troppo vicini tra loro (vincoli impostazioni scheda min 0.2495 mm; reale 0.2000 mm)",
+      "location": {
+        "x": 134.75,
+        "y": 60.382323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "hole_to_hole",
+      "severity": "warning",
+      "message": "Fori troppo vicini tra loro (vincoli impostazioni scheda min 0.2495 mm; reale 0.2000 mm)",
+      "location": {
+        "x": 135.25,
+        "y": 59.882323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "hole_to_hole",
+      "severity": "warning",
+      "message": "Fori troppo vicini tra loro (vincoli impostazioni scheda min 0.2495 mm; reale 0.2000 mm)",
+      "location": {
+        "x": 134.25,
+        "y": 59.882323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "holes_co_located",
+      "severity": "warning",
+      "message": "Fori troppo vicini tra loro",
+      "location": {
+        "x": 149.5,
+        "y": 68.832323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "drill_out_of_range",
+      "severity": "error",
+      "message": "Dimensione foro fuori campo (vincoli impostazioni scheda foro min 0.3000 mm; effettivo 0.2000 mm)",
+      "location": {
+        "x": 155.1,
+        "y": 48.532323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "drill_out_of_range",
+      "severity": "error",
+      "message": "Dimensione foro fuori campo (vincoli impostazioni scheda foro min 0.3000 mm; effettivo 0.2000 mm)",
+      "location": {
+        "x": 156.5,
+        "y": 48.532323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "drill_out_of_range",
+      "severity": "error",
+      "message": "Dimensione foro fuori campo (vincoli impostazioni scheda foro min 0.3000 mm; effettivo 0.2000 mm)",
+      "location": {
+        "x": 154.4,
+        "y": 49.232323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "drill_out_of_range",
+      "severity": "error",
+      "message": "Dimensione foro fuori campo (vincoli impostazioni scheda foro min 0.3000 mm; effettivo 0.2000 mm)",
+      "location": {
+        "x": 155.8,
+        "y": 49.232323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "drill_out_of_range",
+      "severity": "error",
+      "message": "Dimensione foro fuori campo (vincoli impostazioni scheda foro min 0.3000 mm; effettivo 0.2000 mm)",
+      "location": {
+        "x": 157.2,
+        "y": 49.232323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "drill_out_of_range",
+      "severity": "error",
+      "message": "Dimensione foro fuori campo (vincoli impostazioni scheda foro min 0.3000 mm; effettivo 0.2000 mm)",
+      "location": {
+        "x": 155.1,
+        "y": 49.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "drill_out_of_range",
+      "severity": "error",
+      "message": "Dimensione foro fuori campo (vincoli impostazioni scheda foro min 0.3000 mm; effettivo 0.2000 mm)",
+      "location": {
+        "x": 156.5,
+        "y": 49.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "drill_out_of_range",
+      "severity": "error",
+      "message": "Dimensione foro fuori campo (vincoli impostazioni scheda foro min 0.3000 mm; effettivo 0.2000 mm)",
+      "location": {
+        "x": 154.4,
+        "y": 50.632323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "drill_out_of_range",
+      "severity": "error",
+      "message": "Dimensione foro fuori campo (vincoli impostazioni scheda foro min 0.3000 mm; effettivo 0.2000 mm)",
+      "location": {
+        "x": 155.8,
+        "y": 50.632323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "drill_out_of_range",
+      "severity": "error",
+      "message": "Dimensione foro fuori campo (vincoli impostazioni scheda foro min 0.3000 mm; effettivo 0.2000 mm)",
+      "location": {
+        "x": 157.2,
+        "y": 50.632323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "drill_out_of_range",
+      "severity": "error",
+      "message": "Dimensione foro fuori campo (vincoli impostazioni scheda foro min 0.3000 mm; effettivo 0.2000 mm)",
+      "location": {
+        "x": 155.1,
+        "y": 51.332323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "drill_out_of_range",
+      "severity": "error",
+      "message": "Dimensione foro fuori campo (vincoli impostazioni scheda foro min 0.3000 mm; effettivo 0.2000 mm)",
+      "location": {
+        "x": 156.5,
+        "y": 51.332323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "lib_footprint_issues",
+      "severity": "warning",
+      "message": "Libreria impronte 'USBC' non trovata in '/Users/marcobarlera/Documents/Programmazione/ESP32/Pianta Smart/USB-C/usb-c_impronta'.",
+      "location": {
+        "x": 141.6,
+        "y": 95.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "lib_footprint_issues",
+      "severity": "warning",
+      "message": "Libreria impronte 'USBC' non trovata in '/Users/marcobarlera/Documents/Programmazione/ESP32/Pianta Smart/USB-C/usb-c_impronta'.",
+      "location": {
+        "x": 157.3,
+        "y": 50.622323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "lib_footprint_issues",
+      "severity": "warning",
+      "message": "Libreria impronte 'USBC' non trovata in '/Users/marcobarlera/Documents/Programmazione/ESP32/Pianta Smart/USB-C/usb-c_impronta'.",
+      "location": {
+        "x": 154.37,
+        "y": 78.362323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "text_height",
+      "severity": "warning",
+      "message": "Altezza testo fuori campo (vincoli impostazioni scheda altezza testo serigrafia alt. min 0.8000 mm; effettivo 0.5000 mm)",
+      "location": {
+        "x": 135.9,
+        "y": 41.282323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "text_height",
+      "severity": "warning",
+      "message": "Altezza testo fuori campo (vincoli impostazioni scheda altezza testo serigrafia alt. min 0.8000 mm; effettivo 0.5000 mm)",
+      "location": {
+        "x": 141.4,
+        "y": 41.232323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "text_height",
+      "severity": "warning",
+      "message": "Altezza testo fuori campo (vincoli impostazioni scheda altezza testo serigrafia alt. min 0.8000 mm; effettivo 0.5000 mm)",
+      "location": {
+        "x": 130.9,
+        "y": 41.282323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "text_height",
+      "severity": "warning",
+      "message": "Altezza testo fuori campo (vincoli impostazioni scheda altezza testo serigrafia alt. min 0.8000 mm; effettivo 0.5000 mm)",
+      "location": {
+        "x": 138.4,
+        "y": 41.282323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "text_height",
+      "severity": "warning",
+      "message": "Altezza testo fuori campo (vincoli impostazioni scheda altezza testo serigrafia alt. min 0.8000 mm; effettivo 0.5000 mm)",
+      "location": {
+        "x": 133.4,
+        "y": 41.282323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "text_height",
+      "severity": "warning",
+      "message": "Altezza testo fuori campo (vincoli impostazioni scheda altezza testo serigrafia alt. min 0.8000 mm; effettivo 0.5000 mm)",
+      "location": {
+        "x": 143.9,
+        "y": 41.282323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "text_height",
+      "severity": "warning",
+      "message": "Altezza testo fuori campo (vincoli impostazioni scheda altezza testo serigrafia alt. min 0.8000 mm; effettivo 0.5000 mm)",
+      "location": {
+        "x": 160.85,
+        "y": 37.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "text_height",
+      "severity": "warning",
+      "message": "Altezza testo fuori campo (vincoli impostazioni scheda altezza testo serigrafia alt. min 0.8000 mm; effettivo 0.7500 mm)",
+      "location": {
+        "x": 146.15,
+        "y": 73.832323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "text_height",
+      "severity": "warning",
+      "message": "Altezza testo fuori campo (vincoli impostazioni scheda altezza testo serigrafia alt. min 0.8000 mm; effettivo 0.5000 mm)",
+      "location": {
+        "x": 135.25,
+        "y": 37.782323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "text_height",
+      "severity": "warning",
+      "message": "Altezza testo fuori campo (vincoli impostazioni scheda altezza testo serigrafia alt. min 0.8000 mm; effettivo 0.5000 mm)",
+      "location": {
+        "x": 131.4,
+        "y": 98.682323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "text_height",
+      "severity": "warning",
+      "message": "Altezza testo fuori campo (vincoli impostazioni scheda altezza testo serigrafia alt. min 0.8000 mm; effettivo 0.7500 mm)",
+      "location": {
+        "x": 153.4625,
+        "y": 70.532323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "text_height",
+      "severity": "warning",
+      "message": "Altezza testo fuori campo (vincoli impostazioni scheda altezza testo serigrafia alt. min 0.8000 mm; effettivo 0.7500 mm)",
+      "location": {
+        "x": 159.9625,
+        "y": 70.532323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "text_height",
+      "severity": "warning",
+      "message": "Altezza testo fuori campo (vincoli impostazioni scheda altezza testo serigrafia alt. min 0.8000 mm; effettivo 0.5000 mm)",
+      "location": {
+        "x": 165.2,
+        "y": 98.682323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Serigrafia ritagliata dalla maschera di saldatura",
+      "location": {
+        "x": 155.810265,
+        "y": 75.478752,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Serigrafia ritagliata dalla maschera di saldatura",
+      "location": {
+        "x": 156.900127,
+        "y": 75.890885,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Serigrafia ritagliata dalla maschera di saldatura",
+      "location": {
+        "x": 155.589252,
+        "y": 48.566516,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning",
+      "message": "Serigrafia ritagliata dalla maschera di saldatura",
+      "location": {
+        "x": 157.367809,
+        "y": 79.819343,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 155.1,
+        "y": 48.532323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 155.1,
+        "y": 48.532323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 156.5,
+        "y": 48.532323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 156.5,
+        "y": 48.532323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 154.4,
+        "y": 49.232323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 154.4,
+        "y": 49.232323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 155.8,
+        "y": 49.232323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 155.8,
+        "y": 49.232323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 157.2,
+        "y": 49.232323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 157.2,
+        "y": 49.232323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 155.1,
+        "y": 49.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 155.1,
+        "y": 49.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 156.5,
+        "y": 49.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 156.5,
+        "y": 49.932323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 154.4,
+        "y": 50.632323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 154.4,
+        "y": 50.632323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 155.8,
+        "y": 50.632323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 155.8,
+        "y": 50.632323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 157.2,
+        "y": 50.632323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 157.2,
+        "y": 50.632323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 155.1,
+        "y": 51.332323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 155.1,
+        "y": 51.332323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 156.5,
+        "y": 51.332323,
+        "unit": "mm"
+      }
+    },
+    {
+      "type": "solder_mask_bridge",
+      "severity": "error",
+      "message": "L'apertura maschera di saldatura fronte fa ponte tra elementi con collegamenti diversi",
+      "location": {
+        "x": 156.5,
+        "y": 51.332323,
+        "unit": "mm"
+      }
+    }
+  ]
+}

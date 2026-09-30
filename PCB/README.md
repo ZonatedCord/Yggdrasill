@@ -12,4 +12,4 @@ KiCad 8 projects. ESP32 + WS2812B/SK6812 addressable LEDs.
 
 For fabrication details and BOM see [docs/hardware.md](../docs/hardware.md).
 
-For BaseChipOnly hardware review (short-circuit analysis) see [docs/hardware-reviews/base-chiponly-review.md](../docs/hardware-reviews/base-chiponly-review.md).
+For the BaseChipOnly design review see [docs/hardware-reviews/base-chiponly-review.md](../docs/hardware-reviews/base-chiponly-review.md).
