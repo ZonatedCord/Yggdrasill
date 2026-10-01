@@ -28,6 +28,15 @@ Full terms: see `WLED-iOS/LICENSE`.
 
 ---
 
+## Third-party simulation models
+
+**Used by:** `PCB/BaseChipOnly_rev2/simulazioni/` (ngspice simulations of the BaseChipOnly Rev 2.0 board)
+
+- **LM2596 transient model** — © 2015 Texas Instruments Incorporated, *LM2596_3P3 Unencrypted PSpice Transient Model* (SNVMA65), available from the [TI LM2596 product page](https://www.ti.com/product/LM2596). Provided by TI "as is" as a design aid. It is **not redistributed** in this repository: `simulazioni/models/get_lm2596_model.sh` downloads it from ti.com and derives the adjustable-output version used in the simulations.
+- **MMBT3904 / SS34 / LED models** — generic public-domain SPICE parameter sets (2N3904 die model, typical Schottky and LED parameters), in `simulazioni/models/transistors.lib`.
+
+---
+
 ## Commercial use
 
 Commercial use of the hardware or 3D designs requires explicit written permission from the copyright holder.

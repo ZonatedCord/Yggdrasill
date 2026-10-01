@@ -34,7 +34,7 @@ How the board works, power budget and WLED settings: [`docs/base-chiponly-pcb.md
 | Mechanical / visual | KiCad 3D render | polarity marks, orientation, ≥ ~1 mm between parts in the regulator block, ≥ 1.1 mm from the ESP32 |
 | Auto-reset (both esptool sequences) | ngspice | enters download mode; serial monitor does not reset the board |
 | Power-on EN timing | ngspice | EN rises 13.7 ms after 3.3 V (spec ≥ 50 µs) |
-| 3.3 V regulator: nominal, LEDs at 3 A, minimum input, start-up | ngspice + TI LM2596 model | 3.28 V, ≥ 3.21 V worst case; needs ≥ ~4.5 V at its input |
+| 3.3 V regulator: nominal, LEDs at 3 A, minimum input, start-up | ngspice + Texas Instruments LM2596 model (SNVMA65, credited in `LICENSE-NOTICES.md`) | 3.28 V, ≥ 3.21 V worst case; needs ≥ ~4.5 V at its input |
 | Status LED current | ngspice | 4.6–6.7 mA |
 | LED data line to 9 parallel leaves | ngspice | clean ~370/770 ns pulses with R5 = 100 Ω |
 

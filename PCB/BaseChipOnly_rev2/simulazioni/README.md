@@ -50,6 +50,10 @@ For a future revision, a 1 A LDO (e.g. AP7361C-33, ~0.36 V dropout) would be a b
 | `models/transistors.lib` | MMBT3904, SS34, LED models |
 | `grafici/*.png` | plots (from `plot.py`) |
 
+## Credits
+
+The LM2596 regulator simulations use Texas Instruments' **LM2596_3P3 Unencrypted PSpice Transient Model** (SNVMA65, © 2015 Texas Instruments Incorporated, [ti.com/product/LM2596](https://www.ti.com/product/LM2596)). The model is not stored in this repository; `models/get_lm2596_model.sh` downloads it from TI and turns it into the adjustable version (internal divider removed, optional switch-saturation drop added). See also `LICENSE-NOTICES.md`.
+
 ## Re-run
 
 ```sh
