@@ -1,0 +1,24 @@
+* BaseChipOnly - LM2596-ADJ 3.3 V buck: start-up and ESP32 load steps (TI model, nominal)
+.include models/LM2596_ADJ.lib
+.include models/transistors.lib
+.param ILED=0
+XU4 vplus fb sw 0 0 LM2596_ADJ
+VPSU psu 0 PWL(0 0 1m 5)
+.include buck_common.inc
+* ESP32 load: 60 mA idle, 250 mA WiFi RX, 500 mA TX bursts (worst case per Espressif)
+ILOAD v33 0 PWL(0 0  2m 0  2.01m 60m  10m 60m 10.01m 250m  14m 250m 14.01m 500m  15m 500m 15.01m 250m
++ 18m 250m 18.01m 500m 19m 500m 19.01m 60m  25m 60m)
+.control
+option method=gear
+tran 50n 25m 0 100n
+wrdata out/02_buck_nominal.dat v(v33) v(vplus) i(L1) v(sw)
+meas tran t_33_ok   WHEN v(v33)=3.2 RISE=1
+meas tran v33_idle  AVG v(v33) from=8m to=10m
+meas tran rip_idle  PP  v(v33) from=8m to=10m
+meas tran v33_min_tx MIN v(v33) from=14m to=16m
+meas tran v33_max    MAX v(v33) from=3m to=25m
+meas tran il_peak    MAX i(L1) from=0 to=25m
+meas tran il_peak_tx MAX i(L1) from=14m to=16m
+quit
+.endc
+.end

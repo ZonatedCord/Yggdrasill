@@ -26,8 +26,9 @@
 
 - Leaves: 9 × `Foglia_Led`, 15 WS2812B each, wired in parallel on the same data line = **135 LEDs**
 - Worst case at full white: ~55 mA per LED → **~7.4 A**, more than the barrel jack (5 A) allows
-- Recommended PSU: **5 V 4 A** (20 W), with WLED → LED Preferences → Automatic Brightness Limiter set to **3000 mA** (LED current 55 mA)
+- Recommended PSU: **5 V 4 A** (20 W; 5.1–5.2 V output is even better) on a **short, thick cable**, with WLED → LED Preferences → Automatic Brightness Limiter set to **3000 mA** (LED current 55 mA)
 - With a smaller PSU, set the limiter to ~80 % of its rating
 - The board's polyfuse (4 A hold) protects against wiring faults, not against running the LEDs without the limiter
+- Why the cable matters: the 3.3 V regulator needs ≥ ~4.5 V at its input; at 3 A of LED current every 0.1 Ω of cable costs 0.3 V (simulated, see `PCB/BaseChipOnly_rev2/simulazioni/`)
 
 Details: [base-chiponly-pcb.md](base-chiponly-pcb.md).

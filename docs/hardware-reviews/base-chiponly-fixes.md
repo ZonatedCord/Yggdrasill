@@ -4,7 +4,7 @@ Bring-up session, 2026-07-28 → 2026-08-01. Board reached a working state: 5 V 
 
 This file records every defect found, how it was verified, and the proposed fix.
 
-> **Status 2026-09-30:** all defects #1–#10 below are fixed in the KiCad sources in `PCB/BaseChipOnly copia MCP/` (schematic and PCB, verified by netlist diff, ERC, DRC with schematic parity, and Gerber X2 attributes). New fabrication outputs are in `PCB/BaseChipOnly copia MCP/Esportazione-2026-09-30/`. Not yet fabricated or bench-tested — the auto-reset rework in particular still needs a bench check. Details: `PCB/BaseChipOnly copia MCP/FIX_LOG.md`.
+> **Status 2026-09-30:** all defects #1–#10 below are fixed in the KiCad sources in `PCB/BaseChipOnly_rev2/` (schematic and PCB, verified by netlist diff, ERC, DRC with schematic parity, and Gerber X2 attributes). New fabrication outputs are in `PCB/BaseChipOnly_rev2/Esportazione-2026-09-30/`. Not yet fabricated or bench-tested — the auto-reset rework in particular still needs a bench check. Details: `PCB/BaseChipOnly_rev2/FIX_LOG.md`.
 
 > Written in English per the project convention in `CONTEXT.md`.
 
@@ -59,6 +59,8 @@ Useful probe points: J3 holes `GND` and `3v3` are plated and on-net even with no
 
 ## Open issues
 
+> Simulation (2026-09-30, `PCB/BaseChipOnly_rev2/simulazioni/04`): R0 470 Ω gives 6.7 mA (red) / 4.6 mA (white) — the current is fine, so the cause is assembly (R0 missing/wrong, dry joint on the via-in-pad GND pad, damaged LED), not the circuit. The auto-reset failure is also reproduced in simulation (`01b`): with the adapter idle, EN is held at 0.04 V.
+
 **D1 status LED is still dark**, even fitted rotated 180° from the silkscreen, and with a replacement LED. The schematic reversal (#2) is confirmed by the netlist and is genuine, but something else on this branch is also wrong. Not yet diagnosed.
 
 Branch under test: `+5V → R0 (470 Ω) → D1 anode … D1 cathode → GND`. For the LED to conduct, the anode must sit on the **left** pad (the R0 side) and the cathode on the **right** pad (GND).
@@ -79,7 +81,7 @@ Expected current when working: (5 − 2) / 470 ≈ 6.4 mA.
 
 ## Workarounds for the currently assembled board (rev 1.03)
 
-> The next revision (`PCB/BaseChipOnly copia MCP/`) fixes all of these; the notes below apply only to boards made from the rev 1.03 Gerbers.
+> The next revision (`PCB/BaseChipOnly_rev2/`) fixes all of these; the notes below apply only to boards made from the rev 1.03 Gerbers.
 
 These apply to the physical board as built, until the sources are fixed:
 

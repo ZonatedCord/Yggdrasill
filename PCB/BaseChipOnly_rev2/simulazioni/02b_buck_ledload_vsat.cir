@@ -1,0 +1,22 @@
+* BaseChipOnly - buck with realistic switch saturation, LEDs drawing 3 A from +5V
+* (WLED limiter at 3000 mA) -> +5V sags across cable/jack/polyfuse; ESP32 TX bursts
+.include models/LM2596_ADJ.lib
+.include models/transistors.lib
+.param ILED=0
+XU4 vplus fb sw 0 0 LM2596_ADJ_VSAT
+VPSU psu 0 PWL(0 0 1m 5)
+.include buck_common.inc
+* LED current ramps to 3 A (worst case with the WLED limiter), then the ESP32 transmits
+ILED2 vplus 0 PWL(0 0 4m 0 6m 3)
+ILOAD v33 0 PWL(0 0  2m 0  2.01m 60m  8m 60m 8.01m 250m  12m 250m 12.01m 500m  13m 500m 13.01m 250m 20m 250m)
+.control
+option method=gear
+tran 50n 20m 0 100n
+wrdata out/02b_buck_ledload_vsat.dat v(v33) v(vplus) i(L1)
+meas tran vplus_led  AVG v(vplus) from=10m to=12m
+meas tran v33_led    AVG v(v33) from=10m to=12m
+meas tran v33_min_tx MIN v(v33) from=12m to=14m
+meas tran il_pk_tx   MAX i(L1) from=12m to=14m
+quit
+.endc
+.end

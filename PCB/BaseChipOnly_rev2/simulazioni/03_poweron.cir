@@ -1,0 +1,56 @@
+* BaseChipOnly - power-on: EN (CHIP_PU) delay vs the 3.3 V rail, IO0 strapping level
+* 3.3 V rail = start-up waveform from 02_buck_nominal (file v33_startup.pwl)
+* Case A: programming adapter not connected (J3 DTR/RTS open)
+* Case B: adapter connected but USB unplugged (its DTR/RTS pins held near 0 V)
+* Case C: adapter connected and idle (DTR/RTS pins at 3.3 V, powered from USB)
+.include models/transistors.lib
+.include v33.inc
+* --- case A
+R3a io0a v33 10k
+RPUa io0a v33 45k
+Qa_io0 io0a ba_io0 ea_io0 MMBT3904
+R1a nc_rts_a ba_io0 10k
+Rfa1 nc_rts_a 0 100meg
+Rfa2 ea_io0 0 100meg
+R4a ena v33 10k
+C4a ena 0 100n
+Qa_en ena ba_en ea_en MMBT3904
+R2a nc_dtr_a ba_en 10k
+Rfa3 nc_dtr_a 0 100meg
+Rfa4 ea_en 0 100meg
+* --- case B (pins at 0 V through ~1k)
+R3b io0b v33 10k
+RPUb io0b v33 45k
+Qb_io0 io0b bb_io0 dtrb MMBT3904
+R1b rtsb bb_io0 10k
+R4b enb v33 10k
+C4b enb 0 100n
+Qb_en enb bb_en rtsb MMBT3904
+R2b dtrb bb_en 10k
+Rdb dtrb 0 1k
+Rrb rtsb 0 1k
+* --- case C (pins idle high)
+VIDLE vidle 0 3.3
+R3c io0c v33 10k
+RPUc io0c v33 45k
+Qc_io0 io0c bc_io0 dtrc MMBT3904
+R1c rtsc bc_io0 10k
+R4c enc v33 10k
+C4c enc 0 100n
+Qc_en enc bc_en rtsc MMBT3904
+R2c dtrc bc_en 10k
+Rdc vidle dtrc 50
+Rrc vidle rtsc 50
+.control
+tran 1u 20m
+wrdata out/03_poweron.dat v(v33) v(ena) v(io0a) v(enb) v(io0b) v(enc) v(io0c)
+meas tran t_v33_300 WHEN v(v33)=3.0 RISE=1
+meas tran t_en_a    WHEN v(ena)=2.475 RISE=1
+meas tran t_en_b    WHEN v(enb)=2.475 RISE=1
+meas tran t_en_c    WHEN v(enc)=2.475 RISE=1
+meas tran io0a_at   FIND v(io0a) AT=t_en_a
+meas tran io0b_at   FIND v(io0b) AT=t_en_b
+meas tran io0c_at   FIND v(io0c) AT=t_en_c
+quit
+.endc
+.end

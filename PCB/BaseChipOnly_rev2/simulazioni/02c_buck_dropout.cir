@@ -1,0 +1,23 @@
+* BaseChipOnly - minimum input voltage: 500 mA ESP32 load, realistic switch saturation,
+* PSU stepped down 5.0 -> 4.8 -> 4.6 -> 4.4 -> 4.2 -> 4.0 V (4 ms each)
+.include models/LM2596_ADJ.lib
+.include models/transistors.lib
+.param ILED=0
+XU4 vplus fb sw 0 0 LM2596_ADJ_VSAT
+VPSU psu 0 PWL(0 0 1m 5.0  6m 5.0 6.01m 4.8  10m 4.8 10.01m 4.6  14m 4.6 14.01m 4.4  18m 4.4 18.01m 4.2  22m 4.2 22.01m 4.0  26m 4.0)
+.include buck_common.inc
+ILOAD v33 0 PWL(0 0 2m 0 2.01m 500m 26m 500m)
+.control
+option method=gear
+tran 50n 26m 0 100n
+wrdata out/02c_buck_dropout.dat v(v33) v(vplus)
+meas tran v_50 AVG v(v33) from=5m to=6m
+meas tran v_48 AVG v(v33) from=9m to=10m
+meas tran v_46 AVG v(v33) from=13m to=14m
+meas tran v_44 AVG v(v33) from=17m to=18m
+meas tran v_42 AVG v(v33) from=21m to=22m
+meas tran v_40 AVG v(v33) from=25m to=26m
+meas tran vin_44 AVG v(vplus) from=17m to=18m
+quit
+.endc
+.end

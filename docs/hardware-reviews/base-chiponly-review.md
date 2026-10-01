@@ -21,12 +21,12 @@ The short that actually happened on the first assembled board was a **solder bri
 
 ## Findings that were valid, and their status
 
-All of the following are fixed in the KiCad sources in `PCB/BaseChipOnly copia MCP/` (2026-09-30). Full log: `PCB/BaseChipOnly copia MCP/FIX_LOG.md`.
+All of the following are fixed in the KiCad sources in `PCB/BaseChipOnly_rev2/` (2026-09-30). Full log: `PCB/BaseChipOnly_rev2/FIX_LOG.md`.
 
 | Finding | Status |
 |---|---|
 | U3 (USBLC6-2SC6) GND pin unconnected | Fixed — pin 2 on GND. VBUS (pin 5) now on +5V as well, so the clamp has its rail reference. |
-| Polyfuse 12 A protects nothing | Fixed — 1.5 A hold / 3 A trip, Bourns MF-MSMF150/8X, 1812. The old 0603 footprint could not hold any realistic PTC. **Note:** the polyfuse also feeds the LED strip through J2, so the hold current must cover the strip's real draw. |
+| Polyfuse 12 A protects nothing | Fixed — 4 A hold / 8 A trip, Bourns MF-LSMF400/12X, 2920, sized for the 9 leaves (135 WS2812B) with a 5 V 4 A PSU and the WLED current limiter at 3000 mA. The old 0603 footprint could not hold any realistic PTC. |
 | +3V3 traces 0.2 mm | Fixed — +3V3 tracks widened to 0.5 mm. |
 | Reference/Value swapped in the PCB | Fixed — Reference on F.Silkscreen, Value on F.Fab. Footprints are linked to their schematic symbols again, so BOM, pick-and-place and Update-PCB-from-Schematic work. |
 | SMF5.0A on a bidirectional TVS symbol | Fixed — replaced with SMAJ5.0A (unidirectional, SMA package). SMF5.0A is an SOD-123F part and never matched the D_SMA footprint anyway. |

@@ -1,0 +1,20 @@
+* BaseChipOnly - buck start-up with a typical wall adapter (5 V reached in 10 ms)
+.include models/LM2596_ADJ.lib
+.include models/transistors.lib
+.param ILED=0
+XU4 vplus fb sw 0 0 LM2596_ADJ
+VPSU psu 0 PWL(0 0 10m 5)
+.include buck_common.inc
+* ESP32 load: 60 mA idle, 250 mA WiFi RX, 500 mA TX bursts (worst case per Espressif)
+ILOAD v33 0 PWL(0 0  2m 0  2.01m 60m  10m 60m 10.01m 250m  14m 250m 14.01m 500m  15m 500m 15.01m 250m
++ 18m 250m 18.01m 500m 19m 500m 19.01m 60m  25m 60m)
+.control
+option method=gear
+tran 50n 14m 0 100n
+wrdata out/02d_buck_slowramp.dat v(v33) v(vplus) i(L1)
+meas tran il_peak MAX i(L1) from=0 to=14m
+meas tran t_33_ok WHEN v(v33)=3.2 RISE=1
+meas tran v33_max MAX v(v33) from=0 to=14m
+quit
+.endc
+.end

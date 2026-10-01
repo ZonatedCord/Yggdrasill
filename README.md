@@ -69,7 +69,7 @@ Liquid Glass redesign (iOS 26) of a WLED controller. mDNS discovery, WebSocket c
 
 | Component | Status |
 |---|---|
-| BaseChipOnly PCB | **Recommended.** Rev 1.03 (fabricated) works with workarounds; next revision with all bring-up fixes and a new layout is in `PCB/BaseChipOnly copia MCP/` — DRC-clean, not yet fabricated |
+| BaseChipOnly PCB | **Recommended.** Rev 1.03 (`PCB/BaseChipOnly/`, fabricated) works with workarounds. **Rev 2.0** (`PCB/BaseChipOnly_rev2/`) fixes every bring-up defect, new layout — verified by DRC/ERC and simulation only, **not yet fabricated or tested on hardware** |
 | BaseDevKit PCB | Active |
 | BaseUSB-C rev0.1 PCB | Early revision |
 | Foglia PCB | Active |
@@ -127,7 +127,7 @@ Yggdrasill/
 - [iOS app architecture & Liquid Glass](docs/ios-app.md)
 - [3D printing guide](docs/3d-printing.md)
 - [Assembly guide](docs/assembly.md)
-- [BaseChipOnly — how the board works](docs/base-chiponly-pcb.md)
+- [BaseChipOnly — how the board works](docs/base-chiponly-pcb.md) · [Rev 2.0: tests and changes](PCB/BaseChipOnly_rev2/README.md)
 - [BaseChipOnly hardware review](docs/hardware-reviews/base-chiponly-review.md) · [bring-up defects & fixes](docs/hardware-reviews/base-chiponly-fixes.md)
 
 ---

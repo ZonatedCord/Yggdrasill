@@ -1,0 +1,58 @@
+* BaseChipOnly rev 1.03 (AS FABRICATED) - auto-reset for comparison: both emitters on GND,
+* IO0 transistor base <- DTR (R1), EN transistor base <- RTS (R2)
+* Nets and values as in BaseChipOnly.kicad_sch (2026-09-30):
+*   R1 10k  RTS -> base IO0_CTRL1 ; IO0_CTRL1 emitter = DTR ; collector = IO0
+*   R2 10k  DTR -> base EN_CTRL1  ; EN_CTRL1  emitter = RTS ; collector = EN
+*   R3 10k  IO0 pull-up, R4 10k EN pull-up, C4 100nF EN to GND
+* Adapter pins are active-low: pyserial setDTR(True) drives the DTR pin to 0 V.
+*
+* Timeline (ms)
+*   0..10     idle (DTR=RTS=False, both pins 3.3 V)
+*   10..162   esptool UnixTightReset (default on macOS/Linux)
+*   300..451  esptool ClassicReset (Windows), with its intermediate state
+*   600..700  serial monitor opens with DTR=RTS=True (must NOT reset)
+
+.include models/transistors.lib
+
+V3V3 v33 0 3.3
+
+* DTR pin (0 V when asserted)
+VDTR dtr_src 0 PWL(0 3.3  10m 3.3 10.001m 0  12m 0 12.001m 3.3  112m 3.3 112.001m 0  162m 0 162.001m 3.3
++ 400.1m 3.3 400.101m 0  450.2m 0 450.201m 3.3  600m 3.3 600.001m 0  700m 0 700.001m 3.3)
+* RTS pin
+VRTS rts_src 0 PWL(0 3.3  10m 3.3 10.001m 0  112m 0 112.001m 3.3  162m 3.3
++ 300.1m 3.3 300.101m 0  400.2m 0 400.201m 3.3  600m 3.3 600.001m 0  700m 0 700.001m 3.3)
+RDTRo dtr_src dtr 50
+RRTSo rts_src rts 50
+
+* IO0 side
+R1 dtr b_io0 10k
+Q_IO0 io0 b_io0 0 MMBT3904
+R3 io0 v33 10k
+RPU_IO0 io0 v33 45k   ; ESP32 internal pull-up
+CIO0 io0 0 10p
+
+* EN side
+R2 rts b_en 10k
+Q_EN en b_en 0 MMBT3904
+R4 en v33 10k
+C4 en 0 100n
+
+.control
+tran 5u 800m
+wrdata out/01b_autoreset_rev103.dat v(dtr) v(rts) v(en) v(io0)
+* UnixTightReset
+meas tran en_min_tight   MIN v(en) from=15m to=110m
+meas tran t_en_up_tight  WHEN v(en)=2.475 RISE=1 from=112m
+meas tran io0_at_en_up_t FIND v(io0) AT=t_en_up_tight
+meas tran io0_max_hold_t MAX v(io0) from=112.5m to=161m
+* ClassicReset
+meas tran en_min_classic  MIN v(en) from=305m to=400m
+meas tran t_en_up_classic WHEN v(en)=2.475 RISE=1 from=400.2m
+meas tran io0_at_en_up_c  FIND v(io0) AT=t_en_up_classic
+* serial monitor open: EN and IO0 must stay high
+meas tran en_min_monitor  MIN v(en) from=600m to=700m
+meas tran io0_min_monitor MIN v(io0) from=600m to=700m
+quit
+.endc
+.end

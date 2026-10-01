@@ -78,6 +78,12 @@ NEXT_SESSIONS.md
 3D/Vaso/animazione_frames/
 3D/Vaso/animazioni/frames_*/
 
-# BaseChipOnly copia MCP: stale copy of the rev 1.03 Gerbers and old DRC report (kept locally only)
-PCB/BaseChipOnly copia MCP/Esportazione/
-PCB/BaseChipOnly copia MCP/BaseChipOnly_drc_violations.json
+# BaseChipOnly_rev2: stale copy of the rev 1.03 Gerbers and old DRC report (kept locally only)
+PCB/BaseChipOnly_rev2/Esportazione/
+PCB/BaseChipOnly_rev2/BaseChipOnly_drc_violations.json
+
+# BaseChipOnly simulations: raw ngspice output (regenerable) and the original TI download
+PCB/BaseChipOnly_rev2/simulazioni/out/
+PCB/BaseChipOnly_rev2/simulazioni/models/snvma65*
+PCB/BaseChipOnly_rev2/simulazioni/models/snvma66*
+PCB/BaseChipOnly_rev2/simulazioni/models/LM2596_ADJ.lib

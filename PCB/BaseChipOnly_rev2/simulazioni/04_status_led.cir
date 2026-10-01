@@ -1,0 +1,19 @@
+* BaseChipOnly - status LED D1: +5V -> R0 470R -> D1 -> GND
+* Two LED colours (value on the schematic is just "LED")
+.include models/transistors.lib
+V5 v5 0 5
+R0r v5 ar 470
+Dr ar 0 LED_RED
+R0w v5 aw 470
+Dw aw 0 LED_WHITE
+.control
+op
+print i(V5)
+let i_red = (v(v5)-v(ar))/470
+let i_white = (v(v5)-v(aw))/470
+print v(ar) i_red v(aw) i_white
+dc V5 0 5.5 0.05
+wrdata out/04_status_led.dat (v(v5)-v(ar))/470 (v(v5)-v(aw))/470
+quit
+.endc
+.end
