@@ -15,15 +15,15 @@ FDM-printable parts for the Yggdrasill LED plant pot. The vase is now a **modula
 | `Base.stl` | Vase base — carries the PCB mounting points | 135×135×25 | Bayonet joint to lid — see clearances below. **Designed for `BaseChipOnly` only**, see PCB compatibility below |
 | `Coperchio.stl` | Lid | 143×143×18 | Bayonet joint to base — see clearances below |
 | `Ramo_1.stl` | Branch 1 | 101×129×324 | Too tall for upright printing on a 256 mm-Z printer (P2S) — must lie down or print at an angle — **printed, OK**  |
-| `Ramo_2.stl` | Branch 2 | 157×128×335 | Too tall for upright printing on a 256 mm-Z printer (P2S) — must lie down or print at an angle — **printing in progress**  |
-| `Ramo_3.stl` | Branch 3 | 99×153×324 | Too tall for upright printing on a 256 mm-Z printer (P2S) — must lie down or print at an angle |
+| `Ramo_2.stl` | Branch 2 | 157×128×335 | Too tall for upright printing on a 256 mm-Z printer (P2S) — must lie down or print at an angle — **printed, OK**  |
+| `Ramo_3.stl` | Branch 3 | 99×153×324 | Too tall for upright printing on a 256 mm-Z printer (P2S) — must lie down or print at an angle — **printed, OK**  |
 | `Foglia.stl` | Decorative leaf, pairs with `PCB/Foglia/` | 83×27×135 | Printed (9 total) |
 
 ## Print status (first physical print, Oct 2026)
 
 Vase body, base and lid were printed in **PLA on a Bambu Lab P2S** (smooth walls, no fuzzy skin). The three parts fit together: the bayonet/snap-fit joints were very tight at first and went together after the mating surfaces were smoothed. Clearances are therefore on the tight side (a small increase would avoid the manual smoothing). The fit of `TasselloFissaggioPCB.stl` and the PCB in the base is still unverified.
 
-Leaves (`Foglia`) are already printed; Branch 1 is printed and OK, branch 2 is printing, branch 3 is still to do:
+Leaves (`Foglia`) and all three branches are printed and OK. Filaments used and planned:
 
 | Part | Nozzle | Filament |
 |---|---|---|
@@ -37,6 +37,7 @@ Leaves (`Foglia`) are already printed; Branch 1 is printed and OK, branch 2 is p
 - **Branches:** `3D/STL_stampa/Rami.3mf` is the plate exactly as it was printed (orientation, supports, fuzzy skin excluded from the joints). It is a working starting point, **feel free to optimise it** (orientation, supports, settings).
 - **Vase body and lid:** print them upside down (**rotated 180°**, `capovolto`) to save on supports; for the vase body the cable slot ends up on the bed.
 - **Branch numbering:** the branch number (1, 2, 3) is on the inner side of each branch's square mounting boss ("cubotto"), so you can tell the branches apart after printing.
+- **Branch supports (inside the branches):** all three branches printed fine, but the supports left **inside the branches are hard to remove**. Keep a screwdriver and a piece of wire at hand. The plate in `Rami.3mf` already minimises them, but they can't be avoided. If you have the means, print the supports in a **dissolvable (PVA) or dedicated support filament** (needs a multi-material setup such as an AMS), which makes cleanup much easier; reorienting the branches or splitting them with a hidden joint (see below) may also reduce the supports.
 - **Leaves (`Foglia`):** no supports needed.
 
 ### Important print details

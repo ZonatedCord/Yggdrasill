@@ -34,7 +34,7 @@ ESP32 board driving WS2812B / SK6812 addressable LEDs. 4 variants in KiCad, from
 ### 3D print
 `3D/`
 
-Modular vase — base, lid, trunk, 3 branches, leaves — joined with bayonet/snap-fit joints. FDM-printable in PETG or PLA.
+Modular vase — base, lid, trunk, 3 branches, leaves — joined with bayonet/snap-fit joints. FDM-printable in PETG or PLA. Tested in PLA on a Bambu Lab P2S; the supports inside the branches are hard to remove, see [3D/README.md](3D/README.md).
 
 </td>
 <td width="33%" valign="top">
@@ -73,7 +73,7 @@ Liquid Glass redesign (iOS 26) of a WLED controller. mDNS discovery, WebSocket c
 | BaseDevKit PCB | Active |
 | BaseUSB-C rev0.1 PCB | Early revision |
 | Foglia PCB | Active |
-| Modular vase (`3D/STL_stampa/`) | Redesigned as modular parts — fit clearances and bayonet joints not yet verified by a physical print |
+| Modular vase (`3D/STL_stampa/`) | **Printed and assembled** (PLA, Bambu Lab P2S): vase, base, lid, leaves and all 3 branches fit. Tip: the supports inside the branches are hard to remove — use a dissolvable/dedicated support filament if you can, otherwise a screwdriver and wire. Print plate for the branches in `Rami.3mf`; details in [3D/README.md](3D/README.md) |
 | iOS app (Liquid Glass) | In development |
 
 ---
