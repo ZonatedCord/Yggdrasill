@@ -9,12 +9,31 @@ The vase is a **modular design**: base + lid + trunk/vase body + 3 branches + le
 | File | Description | Bed footprint (X×Y×Z mm) | Status |
 |---|---|---|---|
 | `Vaso.stl` | Trunk / vase body | 150×150×167 | Print capovolto (upside down); cable slot on bed |
-| `Base.stl` | Vase base — carries the PCB mounting points | 135×135×25 | Bayonet joint to lid — clearances unverified empirically. **Designed for `BaseChipOnly` only** — see PCB compatibility below |
-| `Coperchio.stl` | Lid | 143×143×18 | Bayonet joint to base — clearances unverified empirically |
-| `Ramo_1.stl` | Branch 1 | 101×129×324 | Too tall for upright printing on a 256 mm-Z printer (P2S) |
-| `Ramo_2.stl` | Branch 2 | 157×128×335 | Too tall for upright printing on a 256 mm-Z printer (P2S) |
+| `Base.stl` | Vase base — carries the PCB mounting points | 135×135×25 | Bayonet joint to lid — printed in PLA, fits (tight at first). **Designed for `BaseChipOnly` only** — see PCB compatibility below |
+| `Coperchio.stl` | Lid | 143×143×18 | Bayonet joint to base — printed in PLA, fits (tight at first) |
+| `Ramo_1.stl` | Branch 1 | 101×129×324 | Too tall for upright printing on a 256 mm-Z printer (P2S) — **printed, OK**  |
+| `Ramo_2.stl` | Branch 2 | 157×128×335 | Too tall for upright printing on a 256 mm-Z printer (P2S) — **printing in progress**  |
 | `Ramo_3.stl` | Branch 3 | 99×153×324 | Too tall for upright printing on a 256 mm-Z printer (P2S) |
-| `Foglia.stl` | Decorative leaf, pairs with `PCB/Foglia/` | 83×27×135 | Some already printed — need 9 total |
+| `Foglia.stl` | Decorative leaf, pairs with `PCB/Foglia/` | 83×27×135 | Printed (9 total) |
+
+## Print status (first physical print, Oct 2026)
+
+Vase body, base and lid were printed in **PLA on a Bambu Lab P2S** (smooth walls, no fuzzy skin). The three parts fit together: the bayonet/snap-fit joints were very tight at first and went together after the mating surfaces were smoothed. Clearances are therefore on the tight side (a small increase would avoid the manual smoothing). The fit of `TasselloFissaggioPCB.stl` and the PCB in the base is still unverified.
+
+Leaves (`Foglia`) are already printed; Branch 1 is printed and OK, branch 2 is printing, branch 3 is still to do:
+
+| Part | Nozzle | Filament |
+|---|---|---|
+| Vase, branches | 0.4 mm | Bambu Lab official PLA |
+| Leaves (`Foglia`) | 0.4 mm | Bambu Lab PLA, white (same as the vase) |
+| Base | 0.4 mm | Any colour (not visible) |
+| Lid (`Coperchio`) | 0.4 mm | Bambu Lab PLA, Bambu green |
+
+### Print files and optimisation
+
+- **Branches:** `3D/STL_stampa/Rami.3mf` is the plate exactly as it was printed (orientation, supports, fuzzy skin excluded from the joints). It is a working starting point, **feel free to optimise it** (orientation, supports, settings).
+- **Vase body and lid:** rotate them **180°** compared with the supplied STL orientation to save on supports.
+- **Leaves (`Foglia`):** no supports needed.
 
 ---
 
@@ -42,12 +61,12 @@ The vase is a **modular design**: base + lid + trunk/vase body + 3 branches + le
 
 ## Bayonet joints: test before committing filament
 
-The base/lid and branch-tenon bayonet/snap-fit joints have only been verified in simulation, not printed. **Print small bayonet test rings for base + lid before printing the full-size parts.** Starting clearances to validate empirically:
+Base, lid and vase body have been printed in PLA and fit together (tight at first; the mating surfaces were smoothed). The branch-tenon joints have only been verified in simulation, so **print a small test piece before the full-size branches**. Current clearances:
 
 - Bosses ("cubotto"): 0.2 mm/side
 - Base: 0.225 mm
 
-If a test print doesn't fit, adjust the clearance parameter in Fusion and re-export the affected STL(s).
+If a print doesn't fit, adjust the clearance parameter in Fusion and re-export the affected STL(s).
 
 ---
 
@@ -63,7 +82,7 @@ If you're building with a different variant (`BaseDevKit`, `BaseUSB-C`), the boa
 
 The `Foglia` PCB is designed to fit inside / alongside the vase body. The LED strip routes through the internal channels of the trunk (`Vaso.stl`).
 
-The `Foglia.stl` decorative leaf mirrors the `PCB/Foglia/` board shape. Some already printed; 9 total needed.
+The `Foglia.stl` decorative leaf mirrors the `PCB/Foglia/` board shape. All 9 printed.
 
 `TasselloFissaggioPCB.stl` (PCB mounting dowel, `3D/`) mounts the PCB inside the base (`Base.stl`), matching `BaseChipOnly`'s mounting holes. Fit against the current `Base.stl` design is still unconfirmed by a physical print — verify when assembling.
 
