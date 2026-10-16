@@ -33,7 +33,7 @@ Leaves (`Foglia`) and all three branches are printed and OK. Filaments used and 
 
 - **Branches:** `3D/STL_stampa/Rami.3mf` is the plate exactly as it was printed (orientation, supports, fuzzy skin excluded from the joints). It is a working starting point, **feel free to optimise it** (orientation, supports, settings).
 - **Vase body and lid:** print them upside down (**rotated 180°**, `capovolto`) to save on supports; for the vase body the cable slot ends up on the bed.
-- **Branch numbering:** the branch number (1, 2, 3) is on the inner side of each branch's square mounting boss ("cubotto"), so you can tell the branches apart after printing.
+- **Branch numbering:** the branch number (1, 2, 3) is on the inner side of each branch's square mounting boss ("cubotto"), so you can tell the branches apart after printing. It is awkward to read there, but that is deliberate: keeping the number inside leaves the outer surface of the boss free, which maximises the contact area with the joint.
 - **Branch supports (inside the branches):** all three branches printed fine, but the supports left **inside the branches are hard to remove**. Keep a screwdriver and a piece of wire at hand. The plate in `Rami.3mf` already minimises them, but they can't be avoided. If you have the means, you could print the supports in a **dissolvable (PVA) or dedicated support filament** (a suggestion only, **not tested** — the branches here were cleaned by hand) (needs a multi-material setup such as an AMS), which makes cleanup much easier; reorienting the branches or splitting them with a hidden joint (see below) may also reduce the supports.
 - **Leaves (`Foglia`):** no supports needed.
 
