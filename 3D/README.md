@@ -35,7 +35,7 @@ Leaves (`Foglia`) are already printed; Branch 1 is printed and OK, branch 2 is p
 ### Print files and optimisation
 
 - **Branches:** `3D/STL_stampa/Rami.3mf` is the plate exactly as it was printed (orientation, supports, fuzzy skin excluded from the joints). It is a working starting point, **feel free to optimise it** (orientation, supports, settings).
-- **Vase body and lid:** rotate them **180°** compared with the supplied STL orientation to save on supports.
+- **Vase body and lid:** print them upside down (**rotated 180°**, `capovolto`) to save on supports; for the vase body the cable slot ends up on the bed.
 - **Leaves (`Foglia`):** no supports needed.
 
 ### Important print details
