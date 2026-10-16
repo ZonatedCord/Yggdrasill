@@ -73,7 +73,7 @@ Liquid Glass redesign (iOS 26) of a WLED controller. mDNS discovery, WebSocket c
 | BaseDevKit PCB | Active |
 | BaseUSB-C rev0.1 PCB | Early revision |
 | Foglia PCB | Active |
-| Modular vase (`3D/STL_stampa/`) | **Printed and assembled** (PLA, Bambu Lab P2S): vase, base, lid, leaves and all 3 branches fit. Tip: the supports inside the branches are hard to remove — use a dissolvable/dedicated support filament if you can, otherwise a screwdriver and wire. Print plate for the branches in `Rami.3mf`; details in [3D/README.md](3D/README.md) |
+| Modular vase (`3D/STL_stampa/`) | **Printed and assembled** (PLA, Bambu Lab P2S): vase, base, lid, leaves and all 3 branches fit. Tip: the supports inside the branches are hard to remove — a dissolvable/dedicated support filament might help (untested); the author cleaned them by hand with a screwdriver and wire. Print plate for the branches in `Rami.3mf`; details in [3D/README.md](3D/README.md) |
 | iOS app (Liquid Glass) | In development |
 
 ---
