@@ -36,6 +36,7 @@ Leaves (`Foglia`) are already printed; Branch 1 is printed and OK, branch 2 is p
 
 - **Branches:** `3D/STL_stampa/Rami.3mf` is the plate exactly as it was printed (orientation, supports, fuzzy skin excluded from the joints). It is a working starting point, **feel free to optimise it** (orientation, supports, settings).
 - **Vase body and lid:** print them upside down (**rotated 180°**, `capovolto`) to save on supports; for the vase body the cable slot ends up on the bed.
+- **Branch numbering:** the branch number (1, 2, 3) is on the inner side of each branch's square mounting boss ("cubotto"), so you can tell the branches apart after printing.
 - **Leaves (`Foglia`):** no supports needed.
 
 ### Important print details
