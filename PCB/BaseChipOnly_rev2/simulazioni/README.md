@@ -39,28 +39,12 @@ For a future revision, a 1 A LDO (e.g. AP7361C-33, ~0.36 V dropout) would be a b
 
 ## Files
 
-| File | What |
-|---|---|
-| `01_autoreset.cir`, `01b_…rev103.cir`, `01c_…C4_1u.cir` | auto-reset (new circuit / as fabricated / C4 1 µF) |
-| `02_buck_nominal.cir`, `02b_…ledload_vsat.cir`, `02c_…dropout.cir`, `02d_…slowramp.cir` | LM2596 buck (share `buck_common.inc`) |
-| `03_poweron.cir`, `03b_poweron_C4_1u.cir` | power-on EN delay (uses `v33.inc` = +3V3 start-up from 02) |
-| `04_status_led.cir` | status LED current |
-| `05_dataline.cir` | LED data line to 9 leaves |
-| `models/get_lm2596_model.sh` | downloads TI's LM2596_3P3 unencrypted transient model (SNVMA65) and derives `models/LM2596_ADJ.lib` (internal divider removed → ADJ version; `LM2596_ADJ_VSAT` adds the datasheet switch saturation). The TI file itself is not stored in the repo |
-| `models/transistors.lib` | MMBT3904, SS34, LED models |
-| `grafici/*.png` | plots (from `plot.py`) |
+Only the results are kept in the repo: this README and the plots in `grafici/*.png`. The ngspice decks (`*.cir`, `*.inc`, `*.pwl`), the model scripts/libraries and `plot.py` were removed from the repo to keep it lean; they can be rebuilt from the schematic and the assumptions below.
 
 ## Credits
 
-The LM2596 regulator simulations use Texas Instruments' **LM2596_3P3 Unencrypted PSpice Transient Model** (SNVMA65, © 2015 Texas Instruments Incorporated, [ti.com/product/LM2596](https://www.ti.com/product/LM2596)). The model is not stored in this repository; `models/get_lm2596_model.sh` downloads it from TI and turns it into the adjustable version (internal divider removed, optional switch-saturation drop added). See also `LICENSE-NOTICES.md`.
+The LM2596 regulator simulations use Texas Instruments' **LM2596_3P3 Unencrypted PSpice Transient Model** (SNVMA65, © 2015 Texas Instruments Incorporated, [ti.com/product/LM2596](https://www.ti.com/product/LM2596)). The model is not stored in this repository; it was downloaded from TI and turned into the adjustable version (internal divider removed, optional switch-saturation drop added). See also `LICENSE-NOTICES.md`.
 
-## Re-run
+## Assumptions
 
-```sh
-cd "PCB/BaseChipOnly_rev2/simulazioni"
-models/get_lm2596_model.sh                    # once: downloads TI's model and builds models/LM2596_ADJ.lib
-for f in 0*.cir; do ngspice -b "$f"; done     # buck decks take ~4-5 min each
-python3 plot.py                               # needs matplotlib + numpy
-```
-
-Assumptions worth knowing: COUT1 (47 µF 0805 X5R) derated to 20 µF at 3.3 V bias; 0.15 Ω from PSU to the +5V rail; leaf wires 0.3/0.6 m at ~50 pF/m, WS2812B input ~10 pF; USB-UART adapter outputs 3.3 V with 50 Ω.
+Worth knowing: COUT1 (47 µF 0805 X5R) derated to 20 µF at 3.3 V bias; 0.15 Ω from PSU to the +5V rail; leaf wires 0.3/0.6 m at ~50 pF/m, WS2812B input ~10 pF; USB-UART adapter outputs 3.3 V with 50 Ω.
