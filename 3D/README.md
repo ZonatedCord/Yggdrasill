@@ -18,6 +18,7 @@ FDM-printable parts for the Yggdrasill LED plant pot. The vase is now a **modula
 | `Ramo_2.stl` | Branch 2 | 157×128×335 | Too tall for upright printing on a 256 mm-Z printer (P2S) — must lie down or print at an angle — **printed, OK**  |
 | `Ramo_3.stl` | Branch 3 | 99×153×324 | Too tall for upright printing on a 256 mm-Z printer (P2S) — must lie down or print at an angle — **printed, OK**  |
 | `Foglia.stl` | Decorative leaf, pairs with `PCB/Foglia/` | 83×27×135 | Printed (9 total) |
+| `TasselloFissaggioPCB.stl` | PCB mounting dowel — fixes the `BaseChipOnly` PCB in the base | — | Designed for `BaseChipOnly` only. Fit with the PCB in the base not yet verified |
 
 ## Print status (first physical print, Oct 2026)
 

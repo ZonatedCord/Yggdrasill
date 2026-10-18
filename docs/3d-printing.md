@@ -15,6 +15,7 @@ The vase is a **modular design**: base + lid + trunk/vase body + 3 branches + le
 | `Ramo_2.stl` | Branch 2 | 157×128×335 | Too tall for upright printing on a 256 mm-Z printer (P2S) — **printed, OK**  |
 | `Ramo_3.stl` | Branch 3 | 99×153×324 | Too tall for upright printing on a 256 mm-Z printer (P2S) — **printed, OK**  |
 | `Foglia.stl` | Decorative leaf, pairs with `PCB/Foglia/` | 83×27×135 | Printed (9 total) |
+| `TasselloFissaggioPCB.stl` | PCB mounting dowel — fixes the `BaseChipOnly` PCB in the base | — | Fit with the PCB in the base not yet verified |
 
 ## Print status (first physical print, Oct 2026)
 
@@ -88,7 +89,7 @@ The `Foglia` PCB is designed to fit inside / alongside the vase body. The LED st
 
 The `Foglia.stl` decorative leaf mirrors the `PCB/Foglia/` board shape. All 9 printed.
 
-`TasselloFissaggioPCB.stl` (PCB mounting dowel, `3D/`) mounts the PCB inside the base (`Base.stl`), matching `BaseChipOnly`'s mounting holes. Fit against the current `Base.stl` design is still unconfirmed by a physical print — verify when assembling.
+`TasselloFissaggioPCB.stl` (PCB mounting dowel, `3D/STL_stampa/`) mounts the PCB inside the base (`Base.stl`), matching `BaseChipOnly`'s mounting holes. Fit against the current `Base.stl` design is still unconfirmed by a physical print — verify when assembling.
 
 ---
 
