@@ -46,6 +46,10 @@ Leaves (`Foglia`) and all three branches are printed and OK. Filaments used and 
 - Fit clearances: 0.2 mm/side on the bosses, 0.225 mm on the base. Base + lid + vase body were printed in PLA and fit (tight at first, see print status above). Branch joints are still unverified.
 - If a branch doesn't fit the print bed/angle in your slicer, a hidden joint/graft can be added to shorten it for printing in two pieces — re-export from Fusion if so.
 
+## Wiring tips
+
+- Use **thin wires** inside the branches, and join the three conductors (+5V, GND, data) between the base and the branches with **Wago-style splicing connectors**, one per conductor, instead of soldering.
+
 ## PCB compatibility
 
 These files (`Base.stl`'s PCB mounting points, and `TasselloFissaggioPCB.stl`) are designed for the **`BaseChipOnly`** PCB variant only (see [PCB/BaseChipOnly](../PCB/BaseChipOnly)). Using `BaseDevKit` or `BaseUSB-C` instead requires redesigning the base's mounting points in Fusion to match that board's outline/holes before printing.

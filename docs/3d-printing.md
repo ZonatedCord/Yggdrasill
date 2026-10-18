@@ -82,6 +82,8 @@ If you're building with a different variant (`BaseDevKit`, `BaseUSB-C`), the boa
 
 ## Assembly notes
 
+- **Wiring:** Use **thin wires** inside the branches, and join the three conductors (+5V, GND, data) between the base and the branches with **Wago-style splicing connectors**, one per conductor, instead of soldering.
+
 The `Foglia` PCB is designed to fit inside / alongside the vase body. The LED strip routes through the internal channels of the trunk (`Vaso.stl`).
 
 The `Foglia.stl` decorative leaf mirrors the `PCB/Foglia/` board shape. All 9 printed.
