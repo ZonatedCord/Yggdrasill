@@ -24,7 +24,7 @@ FDM-printable parts for the Yggdrasill LED plant pot. The vase is now a **modula
 
 Vase body, base and lid were printed in **PLA on a Bambu Lab P2S** (smooth walls, no fuzzy skin). The three parts fit together: the bayonet/snap-fit joints were very tight at first and went together after the mating surfaces were smoothed. Clearances are therefore on the tight side (a small increase would avoid the manual smoothing). The fit of `TasselloFissaggioPCB.stl` and the PCB in the base is still unverified.
 
-Leaves (`Foglia`) and all three branches are printed and OK. Filaments used and planned:
+The prototype is complete and working: the plant lights up with all branches connected. Leaves (`Foglia`) and all three branches are printed and OK; the leaves will be reprinted because the layer lines are visible. Filaments used and planned:
 
 | Part | Nozzle | Filament |
 |---|---|---|
