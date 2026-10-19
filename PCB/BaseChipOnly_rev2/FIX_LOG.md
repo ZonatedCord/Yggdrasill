@@ -14,7 +14,7 @@ Nuovo script `verifica.sh` (ERC + DRC con parità + rigenera Esportazione + conf
 
 ## ✅ Sessione 2026-09-30 (terza parte) — simulazioni SPICE di tutta la scheda
 
-Tutto in `simulazioni/` (vedi `simulazioni/README.md` per tabella risultati, grafici e come rilanciarle). ngspice 47 + modello TI dell'LM2596 (SNVMA65, adattato alla versione ADJ).
+Risultati in `simulazioni/` (vedi `simulazioni/README.md` per tabella risultati e grafici). I deck ngspice e gli script sono stati poi rimossi dal repo: restano solo i risultati. ngspice 47 + modello TI dell'LM2596 (SNVMA65, adattato alla versione ADJ).
 
 | Blocco | Risultato |
 |---|---|
