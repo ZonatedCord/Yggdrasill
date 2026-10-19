@@ -51,7 +51,7 @@ Leaves (`Foglia`) and all three branches are printed and OK. Filaments used and 
 
 - Use **thin wires** inside the branches, and join the three conductors (+5V, GND, data) between the base and the branches with **Wago-style splicing connectors**, one per conductor, instead of soldering.
 - Leave the wires **long**, so you can work from outside and never have to put your hands inside the vase (it is small). To size them, feed the wire in from the branch and push it down to the length you need; repeat for all 3 branches.
-- Use the **same colour code** for the wiring of every leaf: **red = +5V**, **white or black = GND**, **any other colour = data**.
+- Use the **same colour code** for the wiring of every leaf, to avoid mixing up the conductors: **red = +5V**, **white or black = GND**, **any other colour = data**. The colours are only a convention and have no effect on how it works.
 
 ## PCB compatibility
 
