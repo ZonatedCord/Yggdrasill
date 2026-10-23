@@ -50,6 +50,7 @@ Upload the `Esportazione/` folder contents (or zip) to JLCPCB / PCBWay directly.
 Order a **solder paste stencil** for the boards you assemble, instead of placing paste by hand (the SMD parts, 0603 caps and WS2812B, are tedious to do manually, and the leaf board needs 9 copies). The paste layers are already in the Gerber exports (`*_Paste.gbr`).
 
 - **`Foglia` (LED leaf):** the **top-side stencil is enough**. Use the same stencil for the bottom side as well. The bottom has one more capacitor than the top (C8–C15 against C1–C7), so that last capacitor has no matching aperture and is **soldered by hand** after the reflow.
+- **`Foglia` LED D8:** this LED is mounted **vertically**, at the end of the board, with **half of it on the top side and half on the bottom side**, so it has to be soldered by hand. It is not part of the stencil/reflow step.
 - Other boards (`BaseChipOnly`, ...): order the stencil for the sides that carry SMD parts, from the `*_Paste.gbr` files of the Gerber export.
 
 ---
