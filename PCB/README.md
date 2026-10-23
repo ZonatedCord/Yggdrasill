@@ -21,6 +21,6 @@ How BaseChipOnly works: [docs/base-chiponly-pcb.md](../docs/base-chiponly-pcb.md
 python3 PCB/render/make_renders.py
 ```
 
-The script regenerates top and bottom renders of BaseChipOnly Rev 1.03 and Rev 2.0 (standard library only; it finds `kicad-cli` in the PATH or in `/Applications/KiCad/KiCad.app/Contents/MacOS`).
+The script regenerates top and bottom renders of BaseChipOnly Rev 1.03, Rev 2.0 and the leaf board Foglia (standard library only; it finds `kicad-cli` in the PATH or in `/Applications/KiCad/KiCad.app/Contents/MacOS`).
 
 KiCad lacks some 3D models, so the script adds them to temporary copies of the boards: the ESP32 module and the barrel jack (both revisions) and, for Rev 2.0, the 2920 polyfuse and the PTS810 buttons as simplified hand-made models (`PCB/render/models/`). The board files are never modified.

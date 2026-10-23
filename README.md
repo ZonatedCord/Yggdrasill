@@ -93,6 +93,17 @@ Liquid Glass redesign (iOS 26) of a WLED controller. mDNS discovery, WebSocket c
 
 Bottom side: [Rev 1.03](PCB/BaseChipOnly/render/bottom.png) &middot; [Rev 2.0](PCB/BaseChipOnly_rev2/render/bottom.png). The renders also show the polyfuse and the two buttons (Rev 2.0) as simplified models, not the real components; regenerate them with `PCB/render/make_renders.py`.
 
+<table align="center">
+<tr>
+<td align="center"><b>Leaf board (Foglia) &mdash; top</b></td>
+<td align="center"><b>Leaf board (Foglia) &mdash; bottom</b></td>
+</tr>
+<tr>
+<td align="center"><img src="PCB/Foglia/render/top.png" height="480" alt="3D render of the Foglia leaf PCB, top side"></td>
+<td align="center"><img src="PCB/Foglia/render/bottom.png" height="480" alt="3D render of the Foglia leaf PCB, bottom side"></td>
+</tr>
+</table>
+
 ---
 
 ## Quick start

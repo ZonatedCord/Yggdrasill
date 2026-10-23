@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate the 3D renders of BaseChipOnly Rev 1.03 and Rev 2.0.
+"""Regenerate the 3D renders of BaseChipOnly Rev 1.03, Rev 2.0 and the leaf board.
 
 Usage (from anywhere):  python3 PCB/render/make_renders.py
 
@@ -14,6 +14,10 @@ VRML models in PCB/render/models/) are added to the COPY, and kicad-cli
 renders top and bottom views into <board>/render/top.png and bottom.png
 (existing files are overwritten). The board files in the repo are never
 modified.
+
+The leaf board (PCB/Foglia/Foglia_Led.kicad_pcb, components on both sides) needs
+no extra models: the original file is rendered directly (700x1600) into
+PCB/Foglia/render/top.png and bottom.png.
 """
 import shutil
 import subprocess
@@ -41,6 +45,22 @@ BOARDS = [
     ("Rev 1.03", PCB / "BaseChipOnly", COMMON),
     ("Rev 2.0", PCB / "BaseChipOnly_rev2", {**COMMON, **REV2_EXTRA}),
 ]
+
+# (name, pcb file, output dir, width, height)
+LEAF = ("Foglia", PCB / "Foglia" / "Foglia_Led.kicad_pcb", PCB / "Foglia" / "render", 700, 1600)
+
+
+def render(cli, name, pcb, out_dir, w, h):
+    out_dir.mkdir(exist_ok=True)
+    for side in ("top", "bottom"):
+        out = out_dir / (side + ".png")
+        print("  %s: rendering %s -> %s" % (name, side, out.relative_to(PCB.parent)))
+        subprocess.run(
+            [cli, "pcb", "render", "--side", side, "--background", "transparent",
+             "--quality", "high", "-w", str(w), "-h", str(h),
+             "-o", str(out), str(pcb)],
+            check=True,
+        )
 
 
 def block_end(text, start):
@@ -97,17 +117,8 @@ def main():
                 text = set_model(text, ref, m, off, rot)
             tmp_pcb = Path(tmp) / (folder.name + ".kicad_pcb")
             tmp_pcb.write_text(text)
-            out_dir = folder / "render"
-            out_dir.mkdir(exist_ok=True)
-            for side in ("top", "bottom"):
-                out = out_dir / (side + ".png")
-                print("  %s: rendering %s -> %s" % (name, side, out.relative_to(PCB.parent)))
-                subprocess.run(
-                    [cli, "pcb", "render", "--side", side, "--background", "transparent",
-                     "--quality", "high", "-w", "1600", "-h", "1200",
-                     "-o", str(out), str(tmp_pcb)],
-                    check=True,
-                )
+            render(cli, name, tmp_pcb, folder / "render", 1600, 1200)
+        render(cli, LEAF[0], LEAF[1], LEAF[2], LEAF[3], LEAF[4])
     print("Done. Board files untouched.")
 
 
