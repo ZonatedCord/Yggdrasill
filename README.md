@@ -91,7 +91,7 @@ Liquid Glass redesign (iOS 26) of a WLED controller. mDNS discovery, WebSocket c
 </tr>
 </table>
 
-Bottom side: [Rev 1.03](PCB/BaseChipOnly/render/bottom.png) &middot; [Rev 2.0](PCB/BaseChipOnly_rev2/render/bottom.png). In the Rev 2.0 render the polyfuse and the two buttons (SW1/SW2) show only their pads, as KiCad has no 3D model for them.
+Bottom side: [Rev 1.03](PCB/BaseChipOnly/render/bottom.png) &middot; [Rev 2.0](PCB/BaseChipOnly_rev2/render/bottom.png). The renders also show the polyfuse and the two buttons (Rev 2.0) as simplified models, not the real components; regenerate them with `PCB/render/make_renders.py`.
 
 ---
 

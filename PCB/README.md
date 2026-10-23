@@ -18,7 +18,9 @@ How BaseChipOnly works: [docs/base-chiponly-pcb.md](../docs/base-chiponly-pcb.md
 ## Regenerating the renders
 
 ```bash
-kicad-cli pcb render --side top --background transparent --quality high -w 1600 -h 1200 -o PCB/BaseChipOnly_rev2/render/top.png PCB/BaseChipOnly_rev2/BaseChipOnly.kicad_pcb
+python3 PCB/render/make_renders.py
 ```
 
-`kicad-cli` lives in `/Applications/KiCad/KiCad.app/Contents/MacOS` (KiCad 9); use `--side bottom` for the bottom view.
+The script regenerates top and bottom renders of BaseChipOnly Rev 1.03 and Rev 2.0 (standard library only; it finds `kicad-cli` in the PATH or in `/Applications/KiCad/KiCad.app/Contents/MacOS`).
+
+KiCad lacks some 3D models, so the script adds them to temporary copies of the boards: the ESP32 module and the barrel jack (both revisions) and, for Rev 2.0, the 2920 polyfuse and the PTS810 buttons as simplified hand-made models (`PCB/render/models/`). The board files are never modified.
