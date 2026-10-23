@@ -14,3 +14,11 @@ KiCad 8 projects. ESP32 + WS2812B/SK6812 addressable LEDs.
 For fabrication details and BOM see [docs/hardware.md](../docs/hardware.md).
 
 How BaseChipOnly works: [docs/base-chiponly-pcb.md](../docs/base-chiponly-pcb.md). For the design review see [docs/hardware-reviews/base-chiponly-review.md](../docs/hardware-reviews/base-chiponly-review.md).
+
+## Regenerating the renders
+
+```bash
+kicad-cli pcb render --side top --background transparent --quality high -w 1600 -h 1200 -o PCB/BaseChipOnly_rev2/render/top.png PCB/BaseChipOnly_rev2/BaseChipOnly.kicad_pcb
+```
+
+`kicad-cli` lives in `/Applications/KiCad/KiCad.app/Contents/MacOS` (KiCad 9); use `--side bottom` for the bottom view.
