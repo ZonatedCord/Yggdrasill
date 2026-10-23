@@ -12,5 +12,5 @@
 - [ ] Commit messages follow [Conventional Commits](https://github.com/ZonatedCord/Yggdrasill/blob/main/CONTRIBUTING.md)
 - [ ] KiCad: DRC passes with no errors (hardware PRs)
 - [ ] Gerbers re-exported if PCB layout changed
-- [ ] iOS: builds without warnings on Xcode 16+ / iOS 26+
+- [ ] iOS: builds without warnings on Xcode 26 (deployment target 16.0; Liquid Glass design targets iOS 26)
 - [ ] Docs updated if behavior changes

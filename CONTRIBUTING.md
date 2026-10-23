@@ -47,15 +47,18 @@ docs: update 3d-printing material recommendations
 ### iOS app
 
 ```bash
+# your fork (replace YOUR_FORK with your GitHub username):
 git clone --recurse-submodules https://github.com/YOUR_FORK/Yggdrasill
-open WLED-iOS/wled.xcodeproj  # Xcode 16+
+# or the original repository:
+# git clone --recurse-submodules https://github.com/ZonatedCord/Yggdrasill
+open WLED-iOS/wled.xcodeproj  # Xcode 26
 ```
 
 > `WLED-iOS/` is a git submodule pointing to [ZonatedCord/WLED-iOS](https://github.com/ZonatedCord/WLED-iOS)'s `liquid-glass-redesign` branch. Already cloned without `--recurse-submodules`? Run `git submodule update --init`.
 
 ### Hardware (KiCad)
 
-Open any project in `PCB/<variant>/*.kicad_pro`. KiCad 8+ recommended.
+Open any project in `PCB/<variant>/*.kicad_pro`. Use KiCad 9 (the files are saved with KiCad 9 and do not open in KiCad 8).
 
 Gerbers for fabrication are in `PCB/<variant>/Esportazione/`.
 

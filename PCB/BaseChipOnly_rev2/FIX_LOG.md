@@ -108,7 +108,7 @@ D1, D2 e circuito auto-reset erano già corretti sullo schematico (sessione 2026
 # Log sessioni precedenti (2026-09-28) — storico
 
 Progetto: `BaseChipOnly_rev2/BaseChipOnly.kicad_pro`
-Lista fix originale: batch concordato durante il bring-up 2026-07/08 (vedi memoria `basechiponly-pending-fixes`).
+Lista fix originale: batch concordato durante il bring-up 2026-07/08.
 
 **Stato generale: NON pronto per una nuova produzione.** Sessione di follow-up in corso (2026-09-28, seconda parte): D2 ora corretto **sullo schematico** (verificato via netlist), ma il fix **non è ancora propagato al PCB** — vedi punto 2 aggiornato sotto per una scoperta importante che blocca la sincronizzazione automatica schema→PCB su questo progetto.
 
@@ -155,9 +155,9 @@ Lista fix originale: batch concordato durante il bring-up 2026-07/08 (vedi memor
 - **Causa**: lo strumento abbina schematico↔PCB per *reference designator*, ma su questo PCB — a causa del bug del punto 8 — molti footprint hanno il campo **Reference interno** impostato al valore (es. il footprint di D2 ha come Reference "SS34", non "D2"), non solo la serigrafia. Quindi lo schematico "D2" non trova corrispondenza e viene aggiunto come nuovo componente orfano.
 - **Non è stato salvato su disco** (il backend ha rifiutato l'auto-save perché il file PCB era cambiato esternamente nel frattempo, probabilmente perché aperto anche in KiCad GUI) — quindi nessun danno permanente. Ho ricaricato il progetto e confermato che il PCB su disco è tornato pulito (31 footprint, nessun duplicato).
 - **Conclusione operativa**: finché il punto 8 (Reference/Value scambiati) non è corretto, `sync_schematic_to_board`/F8 **non è sicuro da usare su questo progetto** — rischia di duplicare footprint invece di aggiornarli. Il fix del PCB per D2 (ri-orientare il footprint fisico + eventualmente le tracce di rame già instradate sul vecchio net) va quindi fatto **manualmente**, dopo aver sistemato il punto 8.
-- **Fino ad allora resta valida la nota della sessione precedente**: saldare l'SS34 con la banda del catodo sul pad inferiore (verso L1/pin2 LM2596), opposto alla serigrafia — vedi memoria `basechiponly-d2-reversed`.
+- **Fino ad allora resta valida la nota della sessione precedente**: saldare l'SS34 con la banda del catodo sul pad inferiore (verso L1/pin2 LM2596), opposto alla serigrafia della rev 1.03 (il D2 risultava montato al contrario sulla scheda fabbricata; vedi `docs/hardware-reviews/base-chiponly-fixes.md`).
 
-*Nota storica (sessione precedente, 2026-09-28 prima parte)*: un primo tentativo aveva usato `rotate_schematic_component` per "ruotare" D2 di 180°, che invece di scambiare le reti ha fuso /SW con GND (quasi-corto). Annullato subito. Il fix di questa sessione ha evitato del tutto quel tool, usando editing esplicito dei fili — vedi memoria `kicad-mcp-rotate-tool-unreliable`.
+*Nota storica (sessione precedente, 2026-09-28 prima parte)*: un primo tentativo aveva usato `rotate_schematic_component` per "ruotare" D2 di 180°, che invece di scambiare le reti ha fuso /SW con GND (quasi-corto). Annullato subito. Il fix di questa sessione ha evitato del tutto quel tool, usando editing esplicito dei fili.
 
 ### 3. Circuito auto-reset (DTR/RTS incrociati) — ✅ SCHEMATICO FATTO e verificato (2026-09-28, seconda sessione)
 Stato di partenza confermato:

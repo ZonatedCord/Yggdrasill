@@ -6,7 +6,7 @@
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/Hardware%2F3D-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![iOS App: GPL v3](https://img.shields.io/badge/iOS%20App-GPL%20v3-blue.svg)](WLED-iOS/LICENSE)
-[![Platform: iOS 26+](https://img.shields.io/badge/iOS-26%2B-black?logo=apple)](docs/ios-app.md)
+[![Design: iOS 26 Liquid Glass](https://img.shields.io/badge/design-iOS%2026%20Liquid%20Glass-black?logo=apple)](docs/ios-app.md)
 [![Hardware: ESP32](https://img.shields.io/badge/MCU-ESP32-red)](docs/hardware.md)
 
 <img src="3D/Vaso/animazioni/yggdrasill_totale_readme.gif" width="640" alt="Full assembly animation">
@@ -118,8 +118,8 @@ Bottom side: [Rev 1.03](PCB/BaseChipOnly/render/bottom.png) &middot; [Rev 2.0](P
 | The electronics | A fabricated `BaseChipOnly` PCB (Gerbers in `PCB/<variant>/Esportazione/`), 9 `Foglia` leaf boards, a USB-UART adapter for flashing WLED, a 5 V **4 A** power supply (see power notes in [docs/assembly.md](docs/assembly.md#power-requirements)) |
 | Wiring | Thin, long wires and Wago-style splicing connectors (see [docs/3d-printing.md](docs/3d-printing.md#assembly-notes)) |
 | Assembly tips | Solder paste stencils for the SMD boards (the leaf board is needed in 9 copies), see [docs/hardware.md](docs/hardware.md#assembly-tips-solder-paste-stencils) |
-| PCB editing | **KiCad 8+** |
-| The app | **Xcode 16+** and an **iOS 26+** device or simulator |
+| PCB editing | **KiCad 9** (the project files are saved with KiCad 9 and do not open in KiCad 8) |
+| The app | **Xcode 26** to build (the project is saved with Xcode 26.2); deployment target 16.0 as set in the Xcode project; the Liquid Glass design targets iOS 26 |
 
 ## How to build it
 
@@ -130,7 +130,7 @@ Bottom side: [Rev 1.03](PCB/BaseChipOnly/render/bottom.png) &middot; [Rev 2.0](P
 
 ### iOS app
 
-Requires **Xcode 16+** and an **iOS 26+** device or simulator.
+Build with **Xcode 26** (the project is saved with Xcode 26.2). The app's deployment target is iOS 16.0 as set in the Xcode project; the Liquid Glass styling is the iOS 26 design language.
 
 ```bash
 git clone --recurse-submodules https://github.com/ZonatedCord/Yggdrasill

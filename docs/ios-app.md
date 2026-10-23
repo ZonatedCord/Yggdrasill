@@ -41,15 +41,15 @@ The fork replaces the original flat UI with Apple's **Liquid Glass** material sy
 - Controls use glass-backed sliders and toggles
 - Color picker adopts radial blur behind glass panels
 - Light/dark mode: glass adapts automatically to ambient lightness
-- Requires **iOS 26+** deployment target (verify in `Info.plist`)
+- Deployment target is iOS 16.0 as set in the Xcode project (`IPHONEOS_DEPLOYMENT_TARGET`); the Liquid Glass styling is designed for iOS 26
 
 ---
 
 ## Build
 
-1. Open `WLED-iOS/wled.xcodeproj` in **Xcode 16+**
+1. Open `WLED-iOS/wled.xcodeproj` in **Xcode 26** (the project is saved with Xcode 26.2)
 2. Set a valid development team in Signing & Capabilities
-3. Build to a physical device or simulator (iOS 26+)
+3. Build to a physical device or simulator (the Liquid Glass look is the iOS 26 design)
 
 ---
 

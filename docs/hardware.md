@@ -1,6 +1,6 @@
 # Hardware — PCB Variants
 
-All boards are designed in **KiCad 8**. ESP32 + addressable LEDs (WS2812B / SK6812).
+All boards are designed in **KiCad 9**. The project files are saved with KiCad 9 and cannot be opened with KiCad 8. ESP32 + addressable LEDs (WS2812B / SK6812).
 
 ---
 

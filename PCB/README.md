@@ -1,6 +1,6 @@
 # PCB — Hardware Variants
 
-KiCad 8 projects. ESP32 + WS2812B/SK6812 addressable LEDs.
+KiCad 9 projects (saved with KiCad 9; KiCad 8 cannot open them). ESP32 + WS2812B/SK6812 addressable LEDs.
 
 | Folder | Description | Status | Gerbers |
 |---|---|---|---|
